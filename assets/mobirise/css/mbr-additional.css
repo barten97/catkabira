@@ -5062,6 +5062,128 @@ section.lazy-placeholder:after {
   text-align: left;
   color: #232323;
 }
+.cid-spRIST4u4H {
+  padding-top: 105px;
+  padding-bottom: 75px;
+  background-color: #ffffff;
+}
+@media (max-width: 992px) {
+  .cid-spRIST4u4H {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+}
+.cid-spRIST4u4H .text {
+  padding: 0;
+}
+.cid-spRIST4u4H section {
+  position: relative;
+}
+.cid-spRIST4u4H h3 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.cid-spRIST4u4H .mbr-iconfont {
+  padding: 0!important;
+}
+.cid-spRIST4u4H .back {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #ffffff;
+}
+.cid-spRIST4u4H .box {
+  background-image: url("../../../assets/images/cat-energy-101.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cid-spRIST4u4H .icon-wrap {
+  background-color: #498d8e !important;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.cid-spRIST4u4H .icon-wrap:hover {
+  transform: scale(1.1);
+}
+.cid-spRIST4u4H .icon-wrap span {
+  padding-left: 8px;
+}
+.cid-spRIST4u4H .mbr-media span {
+  font-size: 30px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  transition: all 0.25s;
+  color: #ffffff !important;
+}
+.cid-spRIST4u4H .mbr-media span.mbri-play:before {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-35%);
+  -moz-transform: translateX(-35%);
+  -ms-transform: translateX(-35%);
+  -o-transform: translateX(-35%);
+  transform: translateX(-35%);
+}
+.cid-spRIST4u4H .modalWindow {
+  position: fixed;
+  z-index: 5000;
+  left: 0;
+  top: 0;
+  background-color: rgba(61, 61, 61, 0.65);
+  width: 100%;
+  height: 100%;
+}
+.cid-spRIST4u4H .modalWindow .modalWindow-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+.cid-spRIST4u4H .modalWindow .modalWindow-video {
+  height: calc(44.9943757vw);
+  width: 80vw;
+  margin: 0 auto;
+}
+.cid-spRIST4u4H a.close {
+  position: absolute;
+  right: 4vw;
+  top: 4vh;
+  color: #ffffff;
+  z-index: 5000000;
+  font-size: 37px;
+  background: #000;
+  padding: 20px;
+  border-radius: 50%;
+}
+.cid-spRIST4u4H a.close:hover {
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .cid-spRIST4u4H {
+    padding-top: 49px;
+    padding-bottom: 35px;
+  }
+  .cid-spRIST4u4H .box {
+    height: 250px;
+  }
+  .cid-spRIST4u4H .row {
+    padding: 1rem!important;
+  }
+}
+.cid-spRIST4u4H H2 {
+  color: #b1426e;
+}
 .cid-spMv6qhXKP {
   padding-top: 6rem;
   padding-bottom: 6rem;
