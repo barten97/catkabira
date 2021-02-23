@@ -728,53 +728,6 @@
           "_params": {}
         },
         {
-          "alias": "mobirise4-blocks/components",
-          "_isSecondary": true,
-          "typeCompatible": "!isAMP",
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".icons-block .mbr-iconfont": {
-              "font-size": "1.5rem",
-              "color": "@iconsColor",
-              "opacity": ".5",
-              "&:hover": {
-                "opacity": "1"
-              }
-            },
-            ".links-block ul li": {
-              "margin": "0 1rem"
-            },
-            ".icons-block ul li": {
-              "margin": "0 .5rem"
-            },
-            ".links-block ul, .icons-block ul": {
-              "margin-bottom": "1.5rem"
-            },
-            ".links-block, .icons-block": {
-              "text-align": "center"
-            }
-          },
-          "_name": "extFooter10",
-          "_sourceTheme": "woodm4",
-          "_customHTML": "<section class=\"extFooter\" group=\"Additional Blocks\" global mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Links\" name=\"showLinks\">\n        <input type=\"range\" inline title=\"Links Count\" name=\"linksCount\" min=\"1\" max=\"10\" step=\"1\" value=\"5\" condition=\"showLinks\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"range\" inline title=\"Icons Count\" name=\"iconsCount\" min=\"1\" max=\"6\" step=\"1\" value=\"5\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#498d8e\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"8\" condition=\"showLogo\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background7.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"links-block col-sm-12 col-md-10 align-center pb-3\" mbr-if=\"showLinks\">\n                <ul class=\"list-inline\" mbr-list mbr-list-grow=\"linksCount\">\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">\n                        <a href=\"index.html\" class=\"text-warning text-primary\">Home</a>\n                    </li>\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">\n                        <a href=\"about.html\" class=\"text-warning text-primary\">About</a></li>\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">Schedule</li><li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\"></li><li><a href=\"online-trainings.html\" class=\"text-warning\">Onine </a>Programs</li>\n                    \n                     \n                \n                </ul>\n            </div>\n            <div class=\"icons-block col-sm-12 col-md-10 align-center\" mbr-if=\"showIcons\">\n                <ul class=\"list-inline\">\n                    <li class=\"list-inline-item\">\n                        <a class=\"icon-transition\" href=\"https://cat-kabira-yoga-and-energetic-arts.business.site\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-google socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 1\">\n                        <a class=\"icon-transition\" href=\"https://www.facebook.com/CatKabiraYoga\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-facebook socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 2\">\n                        <a class=\"icon-transition\" href=\"https://www.instagram.com/catkabira/\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-instagram socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 3\">\n                        <a class=\"icon-transition\" href=\"https://www.youtube.com/c/CatKabira\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-youtube socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 4\">\n                        <a class=\"icon-transition\" href=\"https://open.spotify.com/show/7djwUd87K9eLkrIlwUEWiC\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-spotify socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 5\">\n                        <a class=\"icon-transition\" href=\"#\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-googleplus socicon\"></span>\n                        </a>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"logo-section col-sm-12 col-lg-4 align-center\" mbr-if=\"showLogo\">\n                <a href=\"index.html\"><img src=\"@PROJECT_PATH@/assets/images/cat-kabira-yoga-and-energetic-arts-1.jpg\" height=\"128\" alt=\"Cat Kabira Yoga & Energetic Arts\" mbr-style=\"{'height': logoSize + 'rem'}\"></a>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_anchor": "extFooter10-30",
-          "_isUserblock": true,
-          "_cid": "spMFFkhmkV",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": false,
-          "_params": {}
-        },
-        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
@@ -1623,53 +1576,6 @@
           "_anchor": "content05-r",
           "_protectedParams": [],
           "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": "mobirise4-blocks/components",
-          "_isSecondary": true,
-          "typeCompatible": "!isAMP",
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".icons-block .mbr-iconfont": {
-              "font-size": "1.5rem",
-              "color": "@iconsColor",
-              "opacity": ".5",
-              "&:hover": {
-                "opacity": "1"
-              }
-            },
-            ".links-block ul li": {
-              "margin": "0 1rem"
-            },
-            ".icons-block ul li": {
-              "margin": "0 .5rem"
-            },
-            ".links-block ul, .icons-block ul": {
-              "margin-bottom": "1.5rem"
-            },
-            ".links-block, .icons-block": {
-              "text-align": "center"
-            }
-          },
-          "_name": "extFooter10",
-          "_sourceTheme": "woodm4",
-          "_customHTML": "<section class=\"extFooter\" group=\"Additional Blocks\" global mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Links\" name=\"showLinks\">\n        <input type=\"range\" inline title=\"Links Count\" name=\"linksCount\" min=\"1\" max=\"10\" step=\"1\" value=\"5\" condition=\"showLinks\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"range\" inline title=\"Icons Count\" name=\"iconsCount\" min=\"1\" max=\"6\" step=\"1\" value=\"5\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#498d8e\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"8\" condition=\"showLogo\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background7.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"links-block col-sm-12 col-md-10 align-center pb-3\" mbr-if=\"showLinks\">\n                <ul class=\"list-inline\" mbr-list mbr-list-grow=\"linksCount\">\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">\n                        <a href=\"index.html\" class=\"text-warning text-primary\">Home</a>\n                    </li>\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">\n                        <a href=\"about.html\" class=\"text-warning text-primary\">About</a></li>\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">Schedule</li><li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\"></li><li><a href=\"online-trainings.html\" class=\"text-warning\">Onine </a>Programs</li>\n                    \n                     \n                \n                </ul>\n            </div>\n            <div class=\"icons-block col-sm-12 col-md-10 align-center\" mbr-if=\"showIcons\">\n                <ul class=\"list-inline\">\n                    <li class=\"list-inline-item\">\n                        <a class=\"icon-transition\" href=\"https://cat-kabira-yoga-and-energetic-arts.business.site\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-google socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 1\">\n                        <a class=\"icon-transition\" href=\"https://www.facebook.com/CatKabiraYoga\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-facebook socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 2\">\n                        <a class=\"icon-transition\" href=\"https://www.instagram.com/catkabira/\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-instagram socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 3\">\n                        <a class=\"icon-transition\" href=\"https://www.youtube.com/c/CatKabira\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-youtube socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 4\">\n                        <a class=\"icon-transition\" href=\"https://open.spotify.com/show/7djwUd87K9eLkrIlwUEWiC\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-spotify socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 5\">\n                        <a class=\"icon-transition\" href=\"#\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-googleplus socicon\"></span>\n                        </a>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"logo-section col-sm-12 col-lg-4 align-center\" mbr-if=\"showLogo\">\n                <a href=\"index.html\"><img src=\"@PROJECT_PATH@/assets/images/cat-kabira-yoga-and-energetic-arts-1.jpg\" height=\"128\" alt=\"Cat Kabira Yoga & Energetic Arts\" mbr-style=\"{'height': logoSize + 'rem'}\"></a>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_anchor": "extFooter10-30",
-          "_isUserblock": true,
-          "_cid": "spMFFkhmkV",
-          "_protectedParams": [],
-          "_global": true,
           "_once": false,
           "_params": {}
         },
@@ -2862,53 +2768,6 @@
           "_global": true,
           "_once": "menu",
           "_params": {}
-        },
-        {
-          "alias": "mobirise4-blocks/components",
-          "_isSecondary": true,
-          "typeCompatible": "!isAMP",
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".icons-block .mbr-iconfont": {
-              "font-size": "1.5rem",
-              "color": "@iconsColor",
-              "opacity": ".5",
-              "&:hover": {
-                "opacity": "1"
-              }
-            },
-            ".links-block ul li": {
-              "margin": "0 1rem"
-            },
-            ".icons-block ul li": {
-              "margin": "0 .5rem"
-            },
-            ".links-block ul, .icons-block ul": {
-              "margin-bottom": "1.5rem"
-            },
-            ".links-block, .icons-block": {
-              "text-align": "center"
-            }
-          },
-          "_name": "extFooter10",
-          "_sourceTheme": "woodm4",
-          "_customHTML": "<section class=\"extFooter\" group=\"Additional Blocks\" global mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Links\" name=\"showLinks\">\n        <input type=\"range\" inline title=\"Links Count\" name=\"linksCount\" min=\"1\" max=\"10\" step=\"1\" value=\"5\" condition=\"showLinks\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"range\" inline title=\"Icons Count\" name=\"iconsCount\" min=\"1\" max=\"6\" step=\"1\" value=\"5\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#498d8e\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"8\" condition=\"showLogo\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background7.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"links-block col-sm-12 col-md-10 align-center pb-3\" mbr-if=\"showLinks\">\n                <ul class=\"list-inline\" mbr-list mbr-list-grow=\"linksCount\">\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">\n                        <a href=\"index.html\" class=\"text-warning text-primary\">Home</a>\n                    </li>\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">\n                        <a href=\"about.html\" class=\"text-warning text-primary\">About</a></li>\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">Schedule</li><li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\"></li><li><a href=\"online-trainings.html\" class=\"text-warning\">Onine </a>Programs</li>\n                    \n                     \n                \n                </ul>\n            </div>\n            <div class=\"icons-block col-sm-12 col-md-10 align-center\" mbr-if=\"showIcons\">\n                <ul class=\"list-inline\">\n                    <li class=\"list-inline-item\">\n                        <a class=\"icon-transition\" href=\"https://cat-kabira-yoga-and-energetic-arts.business.site\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-google socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 1\">\n                        <a class=\"icon-transition\" href=\"https://www.facebook.com/CatKabiraYoga\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-facebook socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 2\">\n                        <a class=\"icon-transition\" href=\"https://www.instagram.com/catkabira/\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-instagram socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 3\">\n                        <a class=\"icon-transition\" href=\"https://www.youtube.com/c/CatKabira\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-youtube socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 4\">\n                        <a class=\"icon-transition\" href=\"https://open.spotify.com/show/7djwUd87K9eLkrIlwUEWiC\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-spotify socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 5\">\n                        <a class=\"icon-transition\" href=\"#\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-googleplus socicon\"></span>\n                        </a>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"logo-section col-sm-12 col-lg-4 align-center\" mbr-if=\"showLogo\">\n                <a href=\"index.html\"><img src=\"@PROJECT_PATH@/assets/images/cat-kabira-yoga-and-energetic-arts-1.jpg\" height=\"128\" alt=\"Cat Kabira Yoga & Energetic Arts\" mbr-style=\"{'height': logoSize + 'rem'}\"></a>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_anchor": "extFooter10-30",
-          "_isUserblock": true,
-          "_cid": "spMFFkhmkV",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": false,
-          "_params": {}
         }
       ]
     },
@@ -3726,53 +3585,6 @@
           "_global": true,
           "_once": "menu",
           "_params": {}
-        },
-        {
-          "alias": "mobirise4-blocks/components",
-          "_isSecondary": true,
-          "typeCompatible": "!isAMP",
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".icons-block .mbr-iconfont": {
-              "font-size": "1.5rem",
-              "color": "@iconsColor",
-              "opacity": ".5",
-              "&:hover": {
-                "opacity": "1"
-              }
-            },
-            ".links-block ul li": {
-              "margin": "0 1rem"
-            },
-            ".icons-block ul li": {
-              "margin": "0 .5rem"
-            },
-            ".links-block ul, .icons-block ul": {
-              "margin-bottom": "1.5rem"
-            },
-            ".links-block, .icons-block": {
-              "text-align": "center"
-            }
-          },
-          "_name": "extFooter10",
-          "_sourceTheme": "woodm4",
-          "_customHTML": "<section class=\"extFooter\" group=\"Additional Blocks\" global mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Links\" name=\"showLinks\">\n        <input type=\"range\" inline title=\"Links Count\" name=\"linksCount\" min=\"1\" max=\"10\" step=\"1\" value=\"5\" condition=\"showLinks\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"range\" inline title=\"Icons Count\" name=\"iconsCount\" min=\"1\" max=\"6\" step=\"1\" value=\"5\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#498d8e\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"8\" condition=\"showLogo\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background7.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"links-block col-sm-12 col-md-10 align-center pb-3\" mbr-if=\"showLinks\">\n                <ul class=\"list-inline\" mbr-list mbr-list-grow=\"linksCount\">\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">\n                        <a href=\"index.html\" class=\"text-warning text-primary\">Home</a>\n                    </li>\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">\n                        <a href=\"about.html\" class=\"text-warning text-primary\">About</a></li>\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">Schedule</li><li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\"></li><li><a href=\"online-trainings.html\" class=\"text-warning\">Onine </a>Programs</li>\n                    \n                     \n                \n                </ul>\n            </div>\n            <div class=\"icons-block col-sm-12 col-md-10 align-center\" mbr-if=\"showIcons\">\n                <ul class=\"list-inline\">\n                    <li class=\"list-inline-item\">\n                        <a class=\"icon-transition\" href=\"https://cat-kabira-yoga-and-energetic-arts.business.site\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-google socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 1\">\n                        <a class=\"icon-transition\" href=\"https://www.facebook.com/CatKabiraYoga\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-facebook socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 2\">\n                        <a class=\"icon-transition\" href=\"https://www.instagram.com/catkabira/\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-instagram socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 3\">\n                        <a class=\"icon-transition\" href=\"https://www.youtube.com/c/CatKabira\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-youtube socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 4\">\n                        <a class=\"icon-transition\" href=\"https://open.spotify.com/show/7djwUd87K9eLkrIlwUEWiC\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-spotify socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 5\">\n                        <a class=\"icon-transition\" href=\"#\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-googleplus socicon\"></span>\n                        </a>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"logo-section col-sm-12 col-lg-4 align-center\" mbr-if=\"showLogo\">\n                <a href=\"index.html\"><img src=\"@PROJECT_PATH@/assets/images/cat-kabira-yoga-and-energetic-arts-1.jpg\" height=\"128\" alt=\"Cat Kabira Yoga & Energetic Arts\" mbr-style=\"{'height': logoSize + 'rem'}\"></a>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_anchor": "extFooter10-30",
-          "_isUserblock": true,
-          "_cid": "spMFFkhmkV",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": false,
-          "_params": {}
         }
       ]
     },
@@ -4336,7 +4148,7 @@
           },
           "_name": "features01",
           "_sourceTheme": "woodm4",
-          "_customHTML": "<section class=\"features1 woodm4_features1\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\t\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Images\" name=\"showImages\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Title\" name=\"showtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Links\" name=\"showlinks\" checked>\n\t\t<select title=\"Cards Count\" name=\"TestimonialsCount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\" selected>3</option>\n\t\t</select>\n\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background2-1.jpg\">\n\t\t\t<input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"title col-12 pb-4 align-center\" mbr-if=\"showTitle || showSubtitle\">\n\t\t\t\t<h2 class=\"pb-3 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\">\n\t\t\t\t\tIN-PERSON TRAININGS &amp; WORKSHOPS</h2>\n\t\t\t\t<h3 class=\"mbr-section-subtitle pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Upcoming Events</h3>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"card align-center col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\">\n\t\t\t\t<div class=\"panel-item\">\n\t\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/energy-workshop-the-yoga-barn-bali-1-946x887.png\" alt>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t\t<h2 class=\"mbr-section-title pb-2 align-center mbr-bold mbr-black mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showtitle\"><span style=\"font-weight: 400;\">Badass Boundaries</span></h2>\n\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .link-wrap\"><b>Friday, March 28th, 2021<br>3:00 - 5:30pm</b><br>THE YOGA BARN<br><i>Ubud, Bali INDONESIA</i></p>\n\t\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n                                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-warning-outline\" href=\"mailto:cat@catkabira.com\" data-app-placeholder=\"Type Text\">SIGN UP NOW</a></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card align-center col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\" mbr-if=\"TestimonialsCount>1\">\n\t\t\t\t<div class=\"panel-item\">\n\t\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/photo-2021-02-15-15.15.39-666x695.jpg\" alt>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t\t<h2 class=\"mbr-section-title pb-2 align-center mbr-bold mbr-black mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showtitle\"><span style=\"font-weight: normal;\">\n\t\t\t\t\t\t\t\tConnection</span></h2>\n\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .link-wrap\"><b>Energy Training<br>April 5-9, 2021</b><br>THE YOGA BARN<br><i>Ubud, Bali INDONESIA</i><br></p>\n\t\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n                                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-warning-outline\" href=\"mailto:cat@catkabira.com\" data-app-placeholder=\"Type Text\">SIGN UP NOW</a></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card align-center col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\" mbr-if=\"TestimonialsCount>2\">\n\t\t\t\t<div class=\"panel-item\">\n\t\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/meditation-energy-healing-bali-1-546x554.jpg\" alt>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t\t<h2 class=\"mbr-section-title pb-2 align-center mbr-bold mbr-black mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showtitle\"><span style=\"font-weight: normal;\">\n\t\t\t\t\t\t\t\tConnection</span></h2>\n\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .link-wrap\"><b>\n\t\t\t\t\t\t\t\tEnergy Training<br>April 5-9, 2021</b><br>THE YOGA BARN<br><i>Ubud, Bali INDONESIA</i><br></p>\n\t\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n                               <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-warning-outline\" href=\"mailto:cat@catkabira.com\" data-app-placeholder=\"Type Text\">SIGN UP NOW</a></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_customHTML": "<section class=\"features1 woodm4_features1\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\t\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Images\" name=\"showImages\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Title\" name=\"showtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Links\" name=\"showlinks\" checked>\n\t\t<select title=\"Cards Count\" name=\"TestimonialsCount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\" selected>3</option>\n\t\t</select>\n\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background2-1.jpg\">\n\t\t\t<input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"title col-12 pb-4 align-center\" mbr-if=\"showTitle || showSubtitle\">\n\t\t\t\t<h2 class=\"pb-3 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\">\n\t\t\t\t\tIN-PERSON TRAININGS &amp; WORKSHOPS</h2>\n\t\t\t\t<h3 class=\"mbr-section-subtitle pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Upcoming Events</h3>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"card align-center col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\">\n\t\t\t\t<div class=\"panel-item\">\n\t\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/energy-workshop-the-yoga-barn-bali-1-946x887.png\" alt>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t\t<h2 class=\"mbr-section-title pb-2 align-center mbr-bold mbr-black mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showtitle\"><span style=\"font-weight: 400;\">Badass Boundaries</span></h2>\n\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .link-wrap\"><b>Friday, March 28th, 2021<br>3:00 - 5:30pm</b><br>THE YOGA BARN<br><i>Ubud, Bali INDONESIA</i></p>\n\t\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n                                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-warning-outline\" href=\"mailto:cat@catkabira.com\" data-app-placeholder=\"Type Text\">SIGN UP NOW</a></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card align-center col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\" mbr-if=\"TestimonialsCount>1\">\n\t\t\t\t<div class=\"panel-item\">\n\t\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/photo-2021-02-15-15.15.39-666x695.jpg\" alt>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t\t<h2 class=\"mbr-section-title pb-2 align-center mbr-bold mbr-black mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showtitle\"><span style=\"font-weight: normal;\">\n\t\t\t\t\t\t\t\tConnection</span></h2>\n\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .link-wrap\"><b>Energy Training<br>April 5-9, 2021</b><br>THE YOGA BARN<br><i>Ubud, Bali INDONESIA</i><br></p>\n\t\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n                                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-warning-outline\" href=\"mailto:cat@catkabira.com\" data-app-placeholder=\"Type Text\">SIGN UP NOW</a></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card align-center col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\" mbr-if=\"TestimonialsCount>2\">\n\t\t\t\t<div class=\"panel-item\">\n\t\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/cat-energy.jpeg\" alt>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t\t<h2 class=\"mbr-section-title pb-2 align-center mbr-bold mbr-black mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showtitle\"><span style=\"font-weight: normal;\">\n\t\t\t\t\t\t\t\tIllumination</span></h2>\n\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .link-wrap\"><b>Energy Training</b><br><b>April 25 - June 13, 2021</b><br>ONLINE TRAINING<br><i>Zoom Immersion</i><br></p>\n\t\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n                               <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-warning-outline\" href=\"mailto:cat@catkabira.com\" data-app-placeholder=\"Type Text\">SIGN UP NOW</a></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
           "_anchor": "features01-u",
           "_isUserblock": true,
           "_cid": "sp7K3fJcBS",
@@ -4484,7 +4296,7 @@
           },
           "_name": "content02",
           "_sourceTheme": "woodm4",
-          "_customHTML": "<section class=\"content2\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Counters\" name=\"showCounters\" checked>\n        <input type=\"color\" title=\"Counters Color\" name=\"counters\" value=\"#003f4e\" selected>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background42-1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#709faf\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-lg-6 md-pb\">\n                <h1 class=\"mbr-section-title align-left mbr-bold mbr-black pb-5 mbr-fonts-style\" mbr-if=\"showTitle\" mbr-theme-style=\"display-7\"><span style=\"font-weight: 400;\">LEVEL 1 FOUNDATIONAL COURSE</span></h1>\n                <img src=\"@PROJECT_PATH@/assets/images/cat-1st-series-776x517.jpeg\" alt=\"Cat Kabira Yoga & Energetic Arts\">\n            </div>\n\n            <div class=\"col-lg-6\">\n                <p class=\"text1 pb-3 align-left mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".text1\" mbr-theme-style=\"display-2\"><i>Connection</i></p>\n                <h3 class=\"mbr-section-subtitle mbr-bold mbr-black mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-7\"><span style=\"font-weight: normal;\">Sunday, March 28th</span><div><span style=\"font-weight: normal;\">3:00 - 6:00 pm</span></div><div><span style=\"font-weight: normal;\">THE YOGA BARN</span></div><div><span style=\"font-weight: normal;\">Ubud, Bali INDONESIA</span></div><br><div><span style=\"font-weight: normal;\">Have you always wanted to work with energy? Did you know that everyone has their own unique energy field? Are you ready for an initiation in your hands and supersenses?</span></div><div><span style=\"font-weight: normal;\"><br></span></div><br><div><span style=\"font-weight: normal;\">Designed for sensitives wanting to learn how to work with the healing energy of others while also understanding your own energy system. Discover your own unique way of working with energy in a way that’s safe, clear, and powerful.</span></div><br><div><span style=\"font-weight: normal;\">What you will learn:</span></div></h3>\n                <div class=\"mbr-text pb-5 counter-container mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".counter-container\" data-multiline mbr-article mbr-if=\"showCounters\">\n                    <ul>\n                        <li><span style=\"font-size: 1.2rem;\">A 45-60 minute flow to practice on others</span><br></li><li>How to stay clear during and after energy sessions</li><li>Your own way of using your own “supersenses”</li><li>Develop your own energetic vocabulary and awareness</li><li>An initiation into a whole new world that will leave you sparkling</li><li>And A LOT LOT more&nbsp;</li>\n                    </ul>\n                </div>\n\n\n\n                <p class=\"text2 align-left mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".text2\" mbr-theme-style=\"display-7\">You’ll receive a manual for the course. <br>All levels welcome.<br></p>\n                 <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-left\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-danger\" href=\"mailto:cat@catkabira.com\" data-app-placeholder=\"Type Text\">SIGN UP NOW</a></div>\n\n\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_customHTML": "<section class=\"content2\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Counters\" name=\"showCounters\" checked>\n        <input type=\"color\" title=\"Counters Color\" name=\"counters\" value=\"#003f4e\" selected>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background42-1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#709faf\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-lg-6 md-pb\">\n                <h1 class=\"mbr-section-title align-left mbr-bold mbr-black pb-5 mbr-fonts-style\" mbr-if=\"showTitle\" mbr-theme-style=\"display-7\"><span style=\"font-weight: 400;\">LEVEL 1 FOUNDATIONAL COURSE</span></h1>\n                <img src=\"@PROJECT_PATH@/assets/images/cat-1st-series-776x517.jpeg\" alt=\"Cat Kabira Yoga & Energetic Arts\">\n            </div>\n\n            <div class=\"col-lg-6\">\n                <p class=\"text1 pb-3 align-left mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".text1\" mbr-theme-style=\"display-2\">Connection</p>\n                <h3 class=\"mbr-section-subtitle mbr-bold mbr-black mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-7\"><span style=\"font-weight: normal;\">Sunday, March 28th</span><div><span style=\"font-weight: normal;\">3:00 - 6:00 pm</span></div><div><span style=\"font-weight: normal;\">THE YOGA BARN</span></div><div><span style=\"font-weight: normal;\">Ubud, Bali INDONESIA</span></div><br><div><span style=\"font-weight: normal;\">Have you always wanted to work with energy? Did you know that everyone has their own unique energy field? Are you ready for an initiation in your hands and supersenses?</span></div><div><span style=\"font-weight: normal;\"><br></span></div><br><div><span style=\"font-weight: normal;\">Designed for sensitives wanting to learn how to work with the healing energy of others while also understanding your own energy system. Discover your own unique way of working with energy in a way that’s safe, clear, and powerful.</span></div><br><div><span style=\"font-weight: normal;\">What you will learn:</span></div></h3>\n                <div class=\"mbr-text pb-5 counter-container mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".counter-container\" data-multiline mbr-article mbr-if=\"showCounters\">\n                    <ul>\n                        <li><span style=\"font-size: 1.2rem;\">A 45-60 minute flow to practice on others</span><br></li><li>How to stay clear during and after energy sessions</li><li>Your own way of using your own “supersenses”</li><li>Develop your own energetic vocabulary and awareness</li><li>An initiation into a whole new world that will leave you sparkling</li><li>And A LOT LOT more&nbsp;</li>\n                    </ul>\n                </div>\n\n\n\n                <p class=\"text2 align-left mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".text2\" mbr-theme-style=\"display-7\">You’ll receive a manual for the course. <br>All levels welcome.<br></p>\n                 <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-left\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-danger\" href=\"mailto:cat@catkabira.com\" data-app-placeholder=\"Type Text\">SIGN UP NOW</a></div>\n\n\n            </div>\n        </div>\n    </div>\n\n</section>",
           "_anchor": "content02-z",
           "_isUserblock": true,
           "_cid": "sp7QS0pgOL",
@@ -4580,53 +4392,6 @@
           "_cid": "rArXFY2Iib",
           "_protectedParams": [],
           "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": "mobirise4-blocks/components",
-          "_isSecondary": true,
-          "typeCompatible": "!isAMP",
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".icons-block .mbr-iconfont": {
-              "font-size": "1.5rem",
-              "color": "@iconsColor",
-              "opacity": ".5",
-              "&:hover": {
-                "opacity": "1"
-              }
-            },
-            ".links-block ul li": {
-              "margin": "0 1rem"
-            },
-            ".icons-block ul li": {
-              "margin": "0 .5rem"
-            },
-            ".links-block ul, .icons-block ul": {
-              "margin-bottom": "1.5rem"
-            },
-            ".links-block, .icons-block": {
-              "text-align": "center"
-            }
-          },
-          "_name": "extFooter10",
-          "_sourceTheme": "woodm4",
-          "_customHTML": "<section class=\"extFooter\" group=\"Additional Blocks\" global mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Links\" name=\"showLinks\">\n        <input type=\"range\" inline title=\"Links Count\" name=\"linksCount\" min=\"1\" max=\"10\" step=\"1\" value=\"5\" condition=\"showLinks\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"range\" inline title=\"Icons Count\" name=\"iconsCount\" min=\"1\" max=\"6\" step=\"1\" value=\"5\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#498d8e\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"8\" condition=\"showLogo\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background7.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"links-block col-sm-12 col-md-10 align-center pb-3\" mbr-if=\"showLinks\">\n                <ul class=\"list-inline\" mbr-list mbr-list-grow=\"linksCount\">\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">\n                        <a href=\"index.html\" class=\"text-warning text-primary\">Home</a>\n                    </li>\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">\n                        <a href=\"about.html\" class=\"text-warning text-primary\">About</a></li>\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">Schedule</li><li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\"></li><li><a href=\"online-trainings.html\" class=\"text-warning\">Onine </a>Programs</li>\n                    \n                     \n                \n                </ul>\n            </div>\n            <div class=\"icons-block col-sm-12 col-md-10 align-center\" mbr-if=\"showIcons\">\n                <ul class=\"list-inline\">\n                    <li class=\"list-inline-item\">\n                        <a class=\"icon-transition\" href=\"https://cat-kabira-yoga-and-energetic-arts.business.site\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-google socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 1\">\n                        <a class=\"icon-transition\" href=\"https://www.facebook.com/CatKabiraYoga\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-facebook socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 2\">\n                        <a class=\"icon-transition\" href=\"https://www.instagram.com/catkabira/\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-instagram socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 3\">\n                        <a class=\"icon-transition\" href=\"https://www.youtube.com/c/CatKabira\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-youtube socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 4\">\n                        <a class=\"icon-transition\" href=\"https://open.spotify.com/show/7djwUd87K9eLkrIlwUEWiC\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-spotify socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 5\">\n                        <a class=\"icon-transition\" href=\"#\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-googleplus socicon\"></span>\n                        </a>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"logo-section col-sm-12 col-lg-4 align-center\" mbr-if=\"showLogo\">\n                <a href=\"index.html\"><img src=\"@PROJECT_PATH@/assets/images/cat-kabira-yoga-and-energetic-arts-1.jpg\" height=\"128\" alt=\"Cat Kabira Yoga & Energetic Arts\" mbr-style=\"{'height': logoSize + 'rem'}\"></a>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_anchor": "extFooter10-30",
-          "_isUserblock": true,
-          "_cid": "spMFFkhmkV",
-          "_protectedParams": [],
-          "_global": true,
           "_once": false,
           "_params": {}
         }
@@ -5467,53 +5232,6 @@
           "_cid": "sp8a2z1HG4",
           "_protectedParams": [],
           "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": "mobirise4-blocks/components",
-          "_isSecondary": true,
-          "typeCompatible": "!isAMP",
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".icons-block .mbr-iconfont": {
-              "font-size": "1.5rem",
-              "color": "@iconsColor",
-              "opacity": ".5",
-              "&:hover": {
-                "opacity": "1"
-              }
-            },
-            ".links-block ul li": {
-              "margin": "0 1rem"
-            },
-            ".icons-block ul li": {
-              "margin": "0 .5rem"
-            },
-            ".links-block ul, .icons-block ul": {
-              "margin-bottom": "1.5rem"
-            },
-            ".links-block, .icons-block": {
-              "text-align": "center"
-            }
-          },
-          "_name": "extFooter10",
-          "_sourceTheme": "woodm4",
-          "_customHTML": "<section class=\"extFooter\" group=\"Additional Blocks\" global mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Links\" name=\"showLinks\">\n        <input type=\"range\" inline title=\"Links Count\" name=\"linksCount\" min=\"1\" max=\"10\" step=\"1\" value=\"5\" condition=\"showLinks\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"range\" inline title=\"Icons Count\" name=\"iconsCount\" min=\"1\" max=\"6\" step=\"1\" value=\"5\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#498d8e\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"8\" condition=\"showLogo\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background7.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"links-block col-sm-12 col-md-10 align-center pb-3\" mbr-if=\"showLinks\">\n                <ul class=\"list-inline\" mbr-list mbr-list-grow=\"linksCount\">\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">\n                        <a href=\"index.html\" class=\"text-warning text-primary\">Home</a>\n                    </li>\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">\n                        <a href=\"about.html\" class=\"text-warning text-primary\">About</a></li>\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">Schedule</li><li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\"></li><li><a href=\"online-trainings.html\" class=\"text-warning\">Onine </a>Programs</li>\n                    \n                     \n                \n                </ul>\n            </div>\n            <div class=\"icons-block col-sm-12 col-md-10 align-center\" mbr-if=\"showIcons\">\n                <ul class=\"list-inline\">\n                    <li class=\"list-inline-item\">\n                        <a class=\"icon-transition\" href=\"https://cat-kabira-yoga-and-energetic-arts.business.site\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-google socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 1\">\n                        <a class=\"icon-transition\" href=\"https://www.facebook.com/CatKabiraYoga\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-facebook socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 2\">\n                        <a class=\"icon-transition\" href=\"https://www.instagram.com/catkabira/\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-instagram socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 3\">\n                        <a class=\"icon-transition\" href=\"https://www.youtube.com/c/CatKabira\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-youtube socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 4\">\n                        <a class=\"icon-transition\" href=\"https://open.spotify.com/show/7djwUd87K9eLkrIlwUEWiC\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-spotify socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 5\">\n                        <a class=\"icon-transition\" href=\"#\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-googleplus socicon\"></span>\n                        </a>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"logo-section col-sm-12 col-lg-4 align-center\" mbr-if=\"showLogo\">\n                <a href=\"index.html\"><img src=\"@PROJECT_PATH@/assets/images/cat-kabira-yoga-and-energetic-arts-1.jpg\" height=\"128\" alt=\"Cat Kabira Yoga & Energetic Arts\" mbr-style=\"{'height': logoSize + 'rem'}\"></a>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_anchor": "extFooter10-30",
-          "_isUserblock": true,
-          "_cid": "spMFFkhmkV",
-          "_protectedParams": [],
-          "_global": true,
           "_once": false,
           "_params": {}
         }
@@ -6501,53 +6219,6 @@
           "_global": true,
           "_once": "menu",
           "_params": {}
-        },
-        {
-          "alias": "mobirise4-blocks/components",
-          "_isSecondary": true,
-          "typeCompatible": "!isAMP",
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".icons-block .mbr-iconfont": {
-              "font-size": "1.5rem",
-              "color": "@iconsColor",
-              "opacity": ".5",
-              "&:hover": {
-                "opacity": "1"
-              }
-            },
-            ".links-block ul li": {
-              "margin": "0 1rem"
-            },
-            ".icons-block ul li": {
-              "margin": "0 .5rem"
-            },
-            ".links-block ul, .icons-block ul": {
-              "margin-bottom": "1.5rem"
-            },
-            ".links-block, .icons-block": {
-              "text-align": "center"
-            }
-          },
-          "_name": "extFooter10",
-          "_sourceTheme": "woodm4",
-          "_customHTML": "<section class=\"extFooter\" group=\"Additional Blocks\" global mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Links\" name=\"showLinks\">\n        <input type=\"range\" inline title=\"Links Count\" name=\"linksCount\" min=\"1\" max=\"10\" step=\"1\" value=\"5\" condition=\"showLinks\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"range\" inline title=\"Icons Count\" name=\"iconsCount\" min=\"1\" max=\"6\" step=\"1\" value=\"5\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#498d8e\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"8\" condition=\"showLogo\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background7.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"links-block col-sm-12 col-md-10 align-center pb-3\" mbr-if=\"showLinks\">\n                <ul class=\"list-inline\" mbr-list mbr-list-grow=\"linksCount\">\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">\n                        <a href=\"index.html\" class=\"text-warning text-primary\">Home</a>\n                    </li>\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">\n                        <a href=\"about.html\" class=\"text-warning text-primary\">About</a></li>\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">Schedule</li><li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\"></li><li><a href=\"online-trainings.html\" class=\"text-warning\">Onine </a>Programs</li>\n                    \n                     \n                \n                </ul>\n            </div>\n            <div class=\"icons-block col-sm-12 col-md-10 align-center\" mbr-if=\"showIcons\">\n                <ul class=\"list-inline\">\n                    <li class=\"list-inline-item\">\n                        <a class=\"icon-transition\" href=\"https://cat-kabira-yoga-and-energetic-arts.business.site\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-google socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 1\">\n                        <a class=\"icon-transition\" href=\"https://www.facebook.com/CatKabiraYoga\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-facebook socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 2\">\n                        <a class=\"icon-transition\" href=\"https://www.instagram.com/catkabira/\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-instagram socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 3\">\n                        <a class=\"icon-transition\" href=\"https://www.youtube.com/c/CatKabira\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-youtube socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 4\">\n                        <a class=\"icon-transition\" href=\"https://open.spotify.com/show/7djwUd87K9eLkrIlwUEWiC\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-spotify socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 5\">\n                        <a class=\"icon-transition\" href=\"#\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-googleplus socicon\"></span>\n                        </a>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"logo-section col-sm-12 col-lg-4 align-center\" mbr-if=\"showLogo\">\n                <a href=\"index.html\"><img src=\"@PROJECT_PATH@/assets/images/cat-kabira-yoga-and-energetic-arts-1.jpg\" height=\"128\" alt=\"Cat Kabira Yoga & Energetic Arts\" mbr-style=\"{'height': logoSize + 'rem'}\"></a>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_anchor": "extFooter10-30",
-          "_isUserblock": true,
-          "_cid": "spMFFkhmkV",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": false,
-          "_params": {}
         }
       ]
     },
@@ -7369,11 +7040,11 @@
             }
           },
           "_cid": "spQ6ACRZXJ",
+          "_anchor": "content2-3a",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "content2-3a"
+          "_params": {}
         },
         {
           "alias": "mobirise4-blocks/components",
@@ -7512,11 +7183,11 @@
           "_sourceTheme": "woodm4",
           "_customHTML": "<section class=\"extVideo\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Icon BG Color\" name=\"iconBGColor\" value=\"#498d8e\">\n        <input type=\"image\" name=\"video\" value=\"@PROJECT_PATH@/assets/images/surviving-eating-disorders.jpg\" title=\"Video Image\">\n        <input type=\"text\" title=\"Modal Video\" name=\"modalVideo\" value=\"https://youtu.be/Bxa3r6zsqq8\">\n        <input type=\"range\" inline title=\"Half BG Height\" name=\"halfHeight\" min=\"20\" max=\"80\" step=\"5\" value=\"50\">\n        <input type=\"color\" title=\"Half BG Color\" name=\"half\" value=\"#ffffff\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background3.jpg\" title=\"Background Image\">\n            <input type=\"color\" value=\"#ffffff\" title=\"Background Color\" selected>\n            <input type=\"video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\" title=\"Background Video\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay&&bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"back\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"col-md-12 col-lg-12 text\">\n            <h2 class=\"mbr-section-title align-center mbr-semibold pb-4 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"><i>Eating Disorder Recovery: <br>Celebrate your body, Own Yourself as A Woman, The Power of Kapha.</i></h2>\n        </div>\n\n        <div class=\"row justify-content-center\">\n            <div class=\"mbr-white box col-md-12 col-12 col-lg-10\">\n                <div class=\"mbr-media show-modal align-center py-2\" data-modal=\".modalWindow\">\n                    <div class=\"icon-wrap\">\n                        <span mbr-icon class=\"mbr-iconfont mobi-mbri-play mobi-mbri\"></span>\n                    </div>\n                </div>\n            </div>\n\n        </div>\n    </div>\n    <div>\n        <div class=\"modalWindow\" style=\"display: none;\">\n            <div class=\"modalWindow-container\">\n                <div class=\"modalWindow-video-container\">\n                    <div class=\"modalWindow-video\">\n                        <iframe width=\"100%\" height=\"100%\" data-src=\"{{modalVideo}}\" frameborder=\"0\" allowfullscreen=\"1\"></iframe>\n                    </div>\n                    <a class=\"close\" role=\"button\" data-dismiss=\"modal\">\n                        <span aria-hidden=\"true\" class=\"mbri-close mbr-iconfont closeModal\"></span>\n                        <span class=\"sr-only\">Close</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "spQ89rKl6M",
+          "_anchor": "extVideo1-3b",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "extVideo1-3b"
+          "_params": {}
         },
         {
           "alias": "mobirise4-blocks/components",
@@ -7623,53 +7294,6 @@
           "_cid": "spMEsyvDly",
           "_protectedParams": [],
           "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": "mobirise4-blocks/components",
-          "_isSecondary": true,
-          "typeCompatible": "!isAMP",
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".icons-block .mbr-iconfont": {
-              "font-size": "1.5rem",
-              "color": "@iconsColor",
-              "opacity": ".5",
-              "&:hover": {
-                "opacity": "1"
-              }
-            },
-            ".links-block ul li": {
-              "margin": "0 1rem"
-            },
-            ".icons-block ul li": {
-              "margin": "0 .5rem"
-            },
-            ".links-block ul, .icons-block ul": {
-              "margin-bottom": "1.5rem"
-            },
-            ".links-block, .icons-block": {
-              "text-align": "center"
-            }
-          },
-          "_name": "extFooter10",
-          "_sourceTheme": "woodm4",
-          "_customHTML": "<section class=\"extFooter\" group=\"Additional Blocks\" global mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Links\" name=\"showLinks\">\n        <input type=\"range\" inline title=\"Links Count\" name=\"linksCount\" min=\"1\" max=\"10\" step=\"1\" value=\"5\" condition=\"showLinks\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <input type=\"range\" inline title=\"Icons Count\" name=\"iconsCount\" min=\"1\" max=\"6\" step=\"1\" value=\"5\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#498d8e\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"8\" condition=\"showLogo\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background7.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"links-block col-sm-12 col-md-10 align-center pb-3\" mbr-if=\"showLinks\">\n                <ul class=\"list-inline\" mbr-list mbr-list-grow=\"linksCount\">\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">\n                        <a href=\"index.html\" class=\"text-warning text-primary\">Home</a>\n                    </li>\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">\n                        <a href=\"about.html\" class=\"text-warning text-primary\">About</a></li>\n                    <li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\">Schedule</li><li class=\"list-inline-item mbr-fonts-style\" mbr-text mbr-theme-style=\"display-4\" data-app-selector=\".links-block, .icons-block\"></li><li><a href=\"online-trainings.html\" class=\"text-warning\">Onine </a>Programs</li>\n                    \n                     \n                \n                </ul>\n            </div>\n            <div class=\"icons-block col-sm-12 col-md-10 align-center\" mbr-if=\"showIcons\">\n                <ul class=\"list-inline\">\n                    <li class=\"list-inline-item\">\n                        <a class=\"icon-transition\" href=\"https://cat-kabira-yoga-and-energetic-arts.business.site\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-google socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 1\">\n                        <a class=\"icon-transition\" href=\"https://www.facebook.com/CatKabiraYoga\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-facebook socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 2\">\n                        <a class=\"icon-transition\" href=\"https://www.instagram.com/catkabira/\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-instagram socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 3\">\n                        <a class=\"icon-transition\" href=\"https://www.youtube.com/c/CatKabira\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-youtube socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 4\">\n                        <a class=\"icon-transition\" href=\"https://open.spotify.com/show/7djwUd87K9eLkrIlwUEWiC\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-spotify socicon\"></span>\n                        </a>\n                    </li>\n                    <li class=\"list-inline-item\" mbr-if=\"iconsCount > 5\">\n                        <a class=\"icon-transition\" href=\"#\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-googleplus socicon\"></span>\n                        </a>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"logo-section col-sm-12 col-lg-4 align-center\" mbr-if=\"showLogo\">\n                <a href=\"index.html\"><img src=\"@PROJECT_PATH@/assets/images/cat-kabira-yoga-and-energetic-arts-1.jpg\" height=\"128\" alt=\"Cat Kabira Yoga & Energetic Arts\" mbr-style=\"{'height': logoSize + 'rem'}\"></a>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_anchor": "extFooter10-30",
-          "_isUserblock": true,
-          "_cid": "spMFFkhmkV",
-          "_protectedParams": [],
-          "_global": true,
           "_once": false,
           "_params": {}
         }
