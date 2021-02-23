@@ -3269,6 +3269,25 @@ section.lazy-placeholder:after {
 .cid-spcjWqFZMK .mbr-section-title {
   color: #003f4e;
 }
+.cid-spQcEIoSEW {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #a3c6d2;
+}
+.cid-spQcEIoSEW .underline .line {
+  width: 2rem;
+  height: 1px;
+  background: #b2ccd2;
+  display: inline-block;
+}
+.cid-spQcEIoSEW .mbr-text {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .cid-spQcEIoSEW .title {
+    width: 100% !important;
+  }
+}
 .cid-spcbSEu31L .navbar {
   padding: 0.5rem 0;
   background: #ffffff;
