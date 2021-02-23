@@ -66,7 +66,7 @@
       }
     ],
     "imageResize": false,
-    "uniqCompNum": 122,
+    "uniqCompNum": 125,
     "versionPublish": "5.2.8",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/cat-kabira-logo-1.jpg",
@@ -607,6 +607,90 @@
           "_params": {}
         },
         {
+          "_name": "header1",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Content BG\" name=\"contentBg\" value=\"#498d8e\" selected>\n        <input type=\"color\" title=\"Card Bg\" name=\"cardBg\" value=\"#f1eeea\" condition=\"showTitle || showSubtitle || showButtons\">\n        <input type=\"checkbox\" title=\"Reverse Content\" name=\"reverseContent\" condition=\"showTitle || showSubtitle || showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@ADDONS_PATH@/claimm4/components/_images/bg_3.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://youtu.be/iM-NestDPNQ\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#055d4e\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay&&bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n     <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"align-left\" mbr-class=\"{'container-fluid': fullWidth,                    'container': !fullWidth}\">\n        <div class=\"row content-wrap\">\n            <div class=\"mbr-black col-lg-5 col-md-12 py-lg-0 mbr-z-index20\" mbr-class=\"{'pb-2 order-2':reverseContent, 'pt-2':!reverseContent}\" mbr-if=\"showTitle||showSubtitle||showButtons\">\n                <div class=\"card-wrap\">\n                    <h1 class=\"mbr-section-title align-center mbr-fonts-style fade-in-up mb-0 mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><span style=\"font-weight: normal;\">Cat Sound Waves</span></h1>\n                    <h3 class=\"mbr-section-subtitle align-center mbr-fonts-style fade-in-up mt-4 mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\"><i>Listen to meditations, writings, classes, interviews and talks put together by Cat Kabira</i><br><br></h3>\n                    <iframe src=\"https://anchor.fm/cat26/embed/episodes/I-will-break-my-own-heart-enough-times-efo8lt\" height=\"102px\" width=\"400px\" frameborder=\"0\" scrolling=\"no\"></iframe>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center fade-in-up\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-warning-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">View Episodes</a> <a class=\"btn btn-md btn-warning\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Listen on Spotify</a></div>\n                </div>\n            </div>\n            <div class=\"col-lg-7 col-md-12 py-lg-0\" mbr-class=\"{'pt-4':reverseContent, 'pb-4':!reverseContent}\">\n                <div class=\"img-wrap\">\n                    <img src=\"@PROJECT_PATH@/assets/images/cat-kabira-energy-healing.jpg\" alt>\n                </div>\n            </div> \n        </div>\n    </div>\n</section>",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "overflow": "hidden",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background": "@bg-value"
+            },
+            "@media (min-width: 1330px)": {
+              ".container": {
+                "max-width": "1330px !important"
+              }
+            },
+            ".content-wrap": {
+              "background-color": "@contentBg"
+            },
+            ".card-wrap": {
+              "margin-top": "5rem",
+              "margin-bottom": "5rem",
+              "padding": "5rem",
+              "background-color": "@cardBg",
+              "@media (min-width: 992px)": {
+                "width": "~'calc(100% + 10rem)'",
+                "margin-left": "46px",
+                "& when (@reverseContent)": {
+                  "margin-left": "-12.6rem"
+                }
+              },
+              "@media (max-width: 767px)": {
+                "margin-top": "0",
+                "margin-bottom": "0",
+                "padding": "48px 20px 48px 20px"
+              }
+            },
+            ".img-wrap": {
+              "height": "100%",
+              "img": {
+                "width": "100%",
+                "height": "100%",
+                "object-fit": "cover",
+                "object-position": "center center"
+              }
+            },
+            ".mbr-section-subtitle": {
+              "animation-delay": ".2s"
+            },
+            ".mbr-section-btn": {
+              "margin-top": "2rem",
+              "margin-bottom": "-0.25rem",
+              "animation-delay": ".4s"
+            },
+            "[class*=\"col\"]": {
+              "padding-left": "0 !important",
+              "padding-right": "0 !important"
+            },
+            ".container": {
+              "@media (min-width: 992px)": {
+                "padding-left": "0 !important",
+                "padding-right": "0 !important"
+              }
+            },
+            ".mbr-section-subtitle, .mbr-section-btn": {
+              "color": "#073b4c",
+              "text-align": "left"
+            },
+            "H1": {
+              "text-align": "left",
+              "color": "#498d8e"
+            }
+          },
+          "_cid": "spQqf0JoDv",
+          "_anchor": "header1-3g",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
           "_name": "content9",
           "_sourceTheme": "hotelm4",
           "_styles": {
@@ -630,7 +714,7 @@
               }
             }
           },
-          "_customHTML": "<section class=\"mbr-section content9\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n\n        <input type=\"range\" inline title=\"Text Width\" name=\"textWidth\" min=\"20\" max=\"100\" step=\"1\" value=\"96\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Underline\" name=\"showUnderline\" checked condition=\"showSubtitle\">\n        <input type=\"color\" title=\"Underline Color\" name=\"underlineColor\" value=\"#b2ccd2\" condition=\"showUnderline && showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#a3c6d2\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title\" mbr-style=\"{'width': textWidth + '%'}\">\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style align-center\" mbr-class=\"{'pb-3': !showUnderline}\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .underline\"><i>\n                    Follow me on instagram @catkabira</i></h2>\n                <div class=\"underline align-center pb-3\" mbr-if=\"showUnderline && showSubtitle\">\n                    <div class=\"line\"></div>\n                </div>\n                <h1 class=\"mbr-section-title mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">@catkabira</h1>\n                <!-- LightWidget WIDGET -->[JS_CODE_0]<iframe src=\"https://cdn.lightwidget.com/widgets/1066275b0a9e5f4d886184945685434b.html\" scrolling=\"no\" allowtransparency=\"true\" class=\"lightwidget-widget\" style=\"width:100%;border:0;overflow:hidden;\"></iframe>\n                <div class=\"mbr-section-btn align-center pt-4\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\" mbr-if=\"showButtons\"><a class=\"btn btn-lg btn-info\" href=\"http://xamanicaxperiences.com/e-marketing.html\" data-app-placeholder=\"Type Text\"><span class=\"mbri-right mbr-iconfont mbr-iconfont-btn\"></span>LEARN MORE</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section content9\" group=\"Content\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n\n        <input type=\"range\" inline title=\"Text Width\" name=\"textWidth\" min=\"20\" max=\"100\" step=\"1\" value=\"96\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Underline\" name=\"showUnderline\" condition=\"showSubtitle\">\n        <input type=\"color\" title=\"Underline Color\" name=\"underlineColor\" value=\"#b2ccd2\" condition=\"showUnderline && showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title\" mbr-style=\"{'width': textWidth + '%'}\">\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style align-center\" mbr-class=\"{'pb-3': !showUnderline}\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .underline\"><i>\n                    Follow me on instagram @catkabira</i></h2>\n                <div class=\"underline align-center pb-3\" mbr-if=\"showUnderline && showSubtitle\">\n                    <div class=\"line\"></div>\n                </div>\n                <h1 class=\"mbr-section-title mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">@catkabira</h1>\n                <!-- LightWidget WIDGET -->[JS_CODE_0]<iframe src=\"https://cdn.lightwidget.com/widgets/1066275b0a9e5f4d886184945685434b.html\" scrolling=\"no\" allowtransparency=\"true\" class=\"lightwidget-widget\" style=\"width:100%;border:0;overflow:hidden;\"></iframe>\n                <div class=\"mbr-section-btn align-center pt-4\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\" mbr-if=\"showButtons\"><a class=\"btn btn-lg btn-info\" href=\"http://xamanicaxperiences.com/e-marketing.html\" data-app-placeholder=\"Type Text\"><span class=\"mbri-right mbr-iconfont mbr-iconfont-btn\"></span>LEARN MORE</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_JSplaceholders": [
             "<script src=\"https://cdn.lightwidget.com/widgets/lightwidget.js\"></script>"
           ],
