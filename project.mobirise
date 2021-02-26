@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "coaching.html",
+    "currentPage": "events.html",
     "theme": {
       "name": "woodm4",
       "title": "WoodM4",
@@ -5124,11 +5124,11 @@
             }
           },
           "_cid": "sq2Q3c2Pux",
+          "_anchor": "content6-43",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "content6-43"
+          "_params": {}
         },
         {
           "_name": "content3",
