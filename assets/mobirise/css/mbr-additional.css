@@ -3781,11 +3781,6 @@ section.lazy-placeholder:after {
   color: #498d8e !important;
   border-color: #003f4e;
 }
-.cid-spSgrYOZ7J {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #003f4e;
-}
 .cid-spSjmE8ako {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -3808,6 +3803,11 @@ section.lazy-placeholder:after {
 .cid-spSjmE8ako .links-block ul,
 .cid-spSjmE8ako .icons-block ul {
   margin-bottom: 1.5rem;
+}
+.cid-spSgrYOZ7J {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #003f4e;
 }
 .cid-sp7JdjVpXj .navbar {
   padding: 0.5rem 0;
