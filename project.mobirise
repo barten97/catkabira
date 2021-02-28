@@ -66,7 +66,7 @@
       }
     ],
     "imageResize": false,
-    "uniqCompNum": 171,
+    "uniqCompNum": 172,
     "versionPublish": "5.3.0",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/cat-kabira-logo-1.jpg",
@@ -6702,10 +6702,176 @@
           },
           "_name": "header03",
           "_sourceTheme": "woodm4",
-          "_customHTML": "<section class=\"header3 woodm4_header3\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"5\" max=\"10\" step=\"1\" value=\"9\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Link\" name=\"showLink\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#003f4e\" selected condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1-1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container-fluid\">\n        <div class=\"row\">\n            <div class=\"col-lg-5 m-auto content md-pb\">\n                <h1 class=\"mbr-section-title align-left mbr-bold pb-4 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><span style=\"font-weight: 400;\">I suffered from anorexia and bulimia for decades.</span></h1>\n                <p class=\"mbr-text pb-4 align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">At the age of 6 I was convinced I was “fat.” I put myself on my first diet at the age of 9 (restricting and starving). At 13 I purged for the first time. At 17 I was told my heart wasn’t going to make it another year.<br><br>I suffered from anorexia and bulimia for decades. I never thought I would heal. I was told this would be me for the rest of my life. The terror I had was that maybe at some point I would look healthy on the outside but still have these demons in my head. <br><br>That I would always hate my body, always want to be smaller, always feel dominated by food and looking for the next solution. That my good days would still be determined by how much I weighed or the looseness in my pants. That I would continually give up any real health because to me what mattered was how small I could get. That I couldn’t control myself around food. Oscillating between diets and self-denial to binges I would be ashamed if anyone could ever see. <br><br>That I felt like a fraud because I said “yoga saved my life” but at some point yoga felt like a trap, like I needed to have a certain “yoga body” and the guilt if I didn’t have that vegan diet.&nbsp;<br></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-lg btn-info-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">ENERGY HEALING SESSIONS</a> <a class=\"btn btn-lg btn-danger-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">ONLINE GUIDED PROGRAMS</a></div>\n            </div>\n            <div class=\"col-lg-7\">\n                <div class=\"wrapper\">\n                    <h2 class=\"link title align-center mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showLink\"></h2>\n                    <a href=\"https://www.facebook.com/CatKabiraYoga\" target=\"_blank\"><span mbr-icon class=\"icon1 mbr-iconfont socicon-facebook socicon\" mbr-if=\"showIcons\"></span></a>\n                    <span mbr-icon class=\"icon2 mbr-iconfont socicon-instagram socicon\" mbr-if=\"showIcons\"></span>\n                    <img class=\"img1\" src=\"@PROJECT_PATH@/assets/images/cat-kabira-energy-healing.jpg\" alt=\"Cat Kabira Yoga & Energetic Arts\">\n                    <img class=\"img2\" src=\"@PROJECT_PATH@/assets/images/eatingdisordersupport-ca48ad06-bf4a-414c-82c6-f5fbecd80bdb.jpg\" alt=\"Mobirise\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"header3 woodm4_header3\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"5\" max=\"10\" step=\"1\" value=\"9\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Link\" name=\"showLink\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#003f4e\" selected condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1-1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container-fluid\">\n        <div class=\"row\">\n            <div class=\"col-lg-5 m-auto content md-pb\">\n                <h1 class=\"mbr-section-title align-left mbr-bold pb-4 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"><span style=\"font-weight: 400;\">I suffered from anorexia and bulimia for decades.</span></h1>\n                <p class=\"mbr-text pb-4 align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">At the age of 6 years old, I was convinced I was “fat.” I put myself on my first diet at the age of 9 (restricting and starving). At 13 years old, I purged for the first time. At 17 years old, I was told my heart wasn’t going to make it another year.<br><br>I suffered from anorexia and bulimia for decades. I never thought I would heal. I was told this would be me for the rest of my life. The terror I had was that maybe at some point I would look healthy on the outside but still have these demons in my head. <br><br>That I would always hate my body, always want to be smaller, always feel dominated by food and looking for the next solution. That my good days would still be determined by how much I weighed or the looseness in my pants. That I would continually give up any real health because to me what mattered was how small I could get. That I couldn’t control myself around food. Oscillating between diets and self-denial to binges I would be ashamed if anyone could ever see. <br><br>That I felt like a fraud because I said “yoga saved my life” but at some point yoga felt like a trap, like I needed to have a certain “yoga body” and the guilt if I didn’t have that vegan diet.&nbsp;<br></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-lg btn-info-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">ENERGY HEALING SESSIONS</a> <a class=\"btn btn-lg btn-danger-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">ONLINE GUIDED PROGRAMS</a></div>\n            </div>\n            <div class=\"col-lg-7\">\n                <div class=\"wrapper\">\n                    <h2 class=\"link title align-center mbr-black mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showLink\"></h2>\n                    <a href=\"https://www.facebook.com/CatKabiraYoga\" target=\"_blank\"><span mbr-icon class=\"icon1 mbr-iconfont socicon-facebook socicon\" mbr-if=\"showIcons\"></span></a>\n                    <span mbr-icon class=\"icon2 mbr-iconfont socicon-instagram socicon\" mbr-if=\"showIcons\"></span>\n                    <img class=\"img1\" src=\"@PROJECT_PATH@/assets/images/cat-kabira-energy-healing.jpg\" alt=\"Cat Kabira Yoga & Energetic Arts\">\n                    <img class=\"img2\" src=\"@PROJECT_PATH@/assets/images/eatingdisordersupport-ca48ad06-bf4a-414c-82c6-f5fbecd80bdb.jpg\" alt=\"Mobirise\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "header03-2x",
           "_isUserblock": true,
           "_cid": "spMCE3VkBp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "@media (max-width: 992px)": {
+              "& when not (@fullScreen)": {
+                "padding-top": "(@paddingTop * 10px)",
+                "padding-bottom": "(@paddingBottom * 10px)"
+              },
+              ".md-pb": {
+                "margin-bottom": "2rem"
+              }
+            },
+            ".link": {
+              "position": "relative",
+              "width": "fit-content",
+              "display": "inline-block",
+              "padding-right": "2rem",
+              "cursor": "pointer",
+              "&:before": {
+                "content": "'\\e966'",
+                "font-family": "MobiriseIcons !important",
+                "position": "absolute",
+                "right": "0rem",
+                "transition": "all 0.3s",
+                "top": "50%",
+                "transform": "translateY(-50%)",
+                "font-size": "1rem",
+                "color": "currentColor"
+              },
+              "&:hover": {
+                "&:before": {
+                  "margin-right": "-0.4rem"
+                }
+              }
+            },
+            ".box": {
+              "background-size": "cover",
+              "background-position": "center",
+              "height": "500px",
+              "margin": "auto",
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center",
+              "position": "relative",
+              "&:before": {
+                "content": "''",
+                "position": "absolute",
+                "top": "0",
+                "left": "0",
+                "background": "@cardoverlayColor",
+                "opacity": "0.1",
+                "width": "100%",
+                "height": "100%",
+                "z-index": "1"
+              }
+            },
+            ".bg1": {
+              "background-image": "url(@video1)"
+            },
+            ".icon-wrap": {
+              "border": "2px solid @iconBGColor",
+              "border-radius": "50%",
+              "width": "80px",
+              "height": "80px",
+              "margin": "auto",
+              "display": "flex",
+              "justify-content": "center",
+              "align-items": "center",
+              "transition": "all 0.3s",
+              "position": "relative",
+              "z-index": "2",
+              "&:hover": {
+                "transform": "scale(1.1)"
+              }
+            },
+            ".icon-wrap span": {
+              "padding-left": "8px"
+            },
+            ".mbr-media span": {
+              "font-size": "38px",
+              "cursor": "pointer",
+              "position": "relative",
+              "display": "inline-block",
+              "transition": "all 0.25s",
+              "color": "@iconColor !important",
+              "&.mbri-play:before": {
+                "position": "absolute",
+                "left": "50%",
+                "-webkit-transform": "translateX(-35%)",
+                "-moz-transform": "translateX(-35%)",
+                "-ms-transform": "translateX(-35%)",
+                "-o-transform": "translateX(-35%)",
+                "transform": "translateX(-35%)"
+              }
+            },
+            ".modalWindow": {
+              "position": "fixed",
+              "z-index": "5000",
+              "left": "0",
+              "top": "0",
+              "background-color": "rgba(61, 61, 61, 0.65)",
+              "width": "100%",
+              "height": "100%",
+              ".modalWindow-container": {
+                "display": "table-cell",
+                "vertical-align": "middle"
+              },
+              ".modalWindow-video": {
+                "height": "calc(80vw / 1.778)",
+                "width": "80vw",
+                "margin": "0 auto"
+              }
+            },
+            "a.close": {
+              "position": "absolute",
+              "right": "4vw",
+              "top": "4vh",
+              "color": "#ffffff",
+              "z-index": "5000000",
+              "font-size": "37px",
+              "background": "#000",
+              "padding": "20px",
+              "border-radius": "50%",
+              "&:hover": {
+                "color": "#ffffff"
+              }
+            },
+            "@media (max-width: 576px)": {
+              "& when not (@fullScreen)": {
+                "padding-top": "(@paddingTop * 7px)",
+                "padding-bottom": "(@paddingBottom * 7px)"
+              },
+              ".box": {
+                "height": "250px"
+              }
+            },
+            "H4": {
+              "color": "#b69b74"
+            },
+            "H3": {
+              "color": "#003f4e"
+            }
+          },
+          "_name": "video02",
+          "_sourceTheme": "woodm4",
+          "_customHTML": "<section class=\"video2 woodm4_video2\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Main Title\" name=\"showtext\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showtitle\">\n        <input type=\"checkbox\" title=\"Show Links\" name=\"showlinks\">\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Icon Border Color\" name=\"iconBGColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"cardoverlayColor\" value=\"#ffffff\">\n        <input type=\"image\" name=\"video1\" value=\"@PROJECT_PATH@/assets/images/cat-kabira-badass-boundaries-2.jpg\" title=\"Background Image 1\">\n        <input type=\"text\" title=\"Modal Video 1\" name=\"modalVideo1\" value=\"https://youtu.be/08NPjv_T7AI\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" title=\"Background Image\">\n            <input type=\"color\" value=\"#eee8df\" title=\"Background Color\" selected>\n            <input type=\"video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\" title=\"Background Video\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"col-lg-7\">\n                <h3 class=\"mbr-section-subtitle align-center mbr-black mbr-bold pb-3 mbr-fonts-style\" mbr-if=\"showtext\" mbr-theme-style=\"display-2\"><span style=\"font-weight: normal;\">Badass Boundaries</span></h3>\n            </div>\n            <div class=\"mbr-white col-md-12 col-12 col-lg-8 md-pb\">\n                <div class=\"box bg1\">\n                    <div class=\"mbr-media show-modal align-center py-2\" data-modal=\".modalWindow1\">\n                        <div class=\"icon-wrap\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-play mobi-mbri\"></span>\n                        </div>\n                    </div>\n                </div>\n                <h2 class=\"mbr-section-title pt-5 align-center mbr-bold mbr-black mbr-fonts-style\" data-app-selector=\".mbr-section-title, .link-wrap\" mbr-theme-style=\"display-2\" mbr-if=\"showtitle\">\n                    Natural Materials</h2>\n                <div class=\"link-wrap pt-3\" mbr-if=\"showlinks\">\n                    <h4 class=\"link align-center mbr-bold mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                        View More</h4>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    <div>\n        <div class=\"modalWindow modalWindow1\" style=\"display: none;\">\n            <div class=\"modalWindow-container\">\n                <div class=\"modalWindow-video-container\">\n                    <div class=\"modalWindow-video\">\n                        <iframe width=\"100%\" height=\"100%\" data-src=\"{{modalVideo1}}\" frameborder=\"0\" allowfullscreen=\"1\"></iframe>\n                    </div>\n                    <a class=\"close\" role=\"button\" data-dismiss=\"modal\">\n                        <span aria-hidden=\"true\" class=\"mbri-close mbr-iconfont closeModal\"></span>\n                        <span class=\"sr-only\">Close</span>\n                    </a>\n                </div>\n                \n            </div>\n        </div>\n    </div>\n    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\"><a class=\"btn btn-md btn-info\" href=\"mailto:cat@catkabira.com\" data-app-placeholder=\"Type Text\">GET FREE 3 TIPS VIDEO SERIES</a></div>\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "video02-4r",
+          "_isUserblock": true,
+          "_cid": "sqm6wxotXx",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -7337,7 +7503,7 @@
         },
         {
           "_name": "content2",
-          "_customHTML": "<section group=\"Content\" class=\"content2\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"6\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Tag\" name=\"showTag\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Second Color Title\" name=\"secondColorTitle\" checked condition=\"showTitle\">\n        <input type=\"color\" title=\"Second Color Title\" value=\"#f23801\" name=\"secondColor\" selected condition=\"secondColorTitle && showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Button\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1.jpg\" selected>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <div class=\"text-wrapper\">\n                    <p class=\"mbr-fonts-style mbr-section-tag\" mbr-theme-style=\"display-7\" mbr-if=\"showTag\" data-app-selector=\".mbr-section-tag\">DIGITAL</p>\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>With analytics we'll</b><b> enable better decisions</b></h2>\n                   <p class=\"mbr-fonts-style mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\">You’re not alone in this<br></p>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Maybe you’ve already done a lot of therapy and psychotherapy. Potentially you’ve been hospitalized. Maybe you turned to yoga as a way to heal. <br>A client asked me the other day, “I tried everything, what did you and why did it work with you?” Part of it is that I see you. I take time to know you. We have trust. I also pay attention to what your needs are and I’m mindful at the pace that is best for us to work together.<br><br>Also, you’ve got me to keep you accountable. It’s not just 1-2 sessions/week that we meet together. You’ll be sending me daily messages as well. You’re not alone in this. <br><br>I also do energy work with you. This is also vital. That’s what worked for me. We’re not just working on the physical and mental level. We’re meeting your emotional self, your astral self, the very subtle parts of yourself. You’re going to wake up to a whole new weird of sensing yourself that will feel like magic.<br><br></p>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-warning\" href=\"mailto:cat@catkabira.com\" data-app-placeholder=\"Type Text\">BOOK SESSION</a></div>\n                </div>\n            </div>\n              \n            <div class=\"col-12 col-lg-{{12 - textWidth}} d-flex justify-content-center\">\n                <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list\" data-multiline mbr-article>\n                    <li>You’re going to think this is just about your body image and food.</li><li>You’re going to find out that this is about owning you, accepting you, and owning your power in your lifetime. </li><li>You’re not just going to start to feel like you can eat like a normal person or regain health. </li><li>You’ll find that your relationships will improve, your career will improve, you’ll feel joyful again and you’ll get excited about - what will you do with this magnificent life that you’re in?</li><li>Your program will be customized as I work with everyone quite individually and uniquely.</li><li>&nbsp;If you’re ready to heal, contact me. The length of time it will take depends on many factors so we can definitely chat to see what’s best for you. 3 months is the minimum amount of time and most women work with me for 6-12 months.&nbsp;</li><li>We can work anywhere you are in the world and if we happen to be in the same place, I’d love to work with you in-person. I can’t to support you in this healing journey and in the true ownership of your love and power in your life. It’s time.&nbsp;</li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section group=\"Content\" class=\"content2\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"6\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Tag\" name=\"showTag\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Second Color Title\" name=\"secondColorTitle\" checked condition=\"showTitle\">\n        <input type=\"color\" title=\"Second Color Title\" value=\"#f23801\" name=\"secondColor\" selected condition=\"secondColorTitle && showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Button\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1.jpg\" selected>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <div class=\"text-wrapper\">\n                    <p class=\"mbr-fonts-style mbr-section-tag\" mbr-theme-style=\"display-7\" mbr-if=\"showTag\" data-app-selector=\".mbr-section-tag\">DIGITAL</p>\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>With analytics we'll</b><b> enable better decisions</b></h2>\n                   <p class=\"mbr-fonts-style mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\">You’re not alone in this<br></p>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Maybe you’ve already done a lot of therapy and psychotherapy. Potentially you’ve been hospitalized. Maybe you turned to yoga as a way to heal. <br><br>A client asked me the other day, “I tried everything, what did you and why did it work with you?” Part of it is that I see you. I take time to know you. We have trust. I also pay attention to what your needs are and I’m mindful at the pace that is best for us to work together.<br><br>Also, you’ve got me to keep you accountable. It’s not just 1-2 sessions/week that we meet together. You’ll be sending me daily messages as well. You’re not alone in this. <br><br>I also do energy work with you. This is also vital. That’s what worked for me. We’re not just working on the physical and mental level. We’re meeting your emotional self, your astral self, the very subtle parts of yourself. You’re going to wake up to a whole new weird of sensing yourself that will feel like magic.<br><br></p>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-warning\" href=\"mailto:cat@catkabira.com\" data-app-placeholder=\"Type Text\">BOOK SESSION</a></div>\n                </div>\n            </div>\n              \n            <div class=\"col-12 col-lg-{{12 - textWidth}} d-flex justify-content-center\">\n                <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list\" data-multiline mbr-article>\n                    <li>You’re going to think this is just about your body image and food.</li><li>You’re going to find out that this is about owning you, accepting you, and owning your power in your lifetime. </li><li>You’re not just going to start to feel like you can eat like a normal person or regain health. </li><li>You’ll find that your relationships will improve, your career will improve, you’ll feel joyful again and you’ll get excited about - what will you do with this magnificent life that you’re in?</li><li>Your program will be customized as I work with everyone quite individually and uniquely.</li><li>&nbsp;If you’re ready to heal, contact me. The length of time it will take depends on many factors so we can definitely chat to see what’s best for you. 3 months is the minimum amount of time and most women work with me for 6-12 months.&nbsp;</li><li>We can work anywhere you are in the world and if we happen to be in the same place, I’d love to work with you in-person. I can’t to support you in this healing journey and in the true ownership of your love and power in your life. It’s time.&nbsp;</li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
           "_styles": {
             "& when not (@fullScreen)": {
               "padding-top": "(@paddingTop * 1rem)",

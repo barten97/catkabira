@@ -5988,6 +5988,148 @@ section.lazy-placeholder:after {
 .cid-spMCE3VkBp H1 {
   color: #b1426e;
 }
+.cid-sqm6wxotXx {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background-color: #eee8df;
+}
+@media (max-width: 992px) {
+  .cid-sqm6wxotXx {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .cid-sqm6wxotXx .md-pb {
+    margin-bottom: 2rem;
+  }
+}
+.cid-sqm6wxotXx .link {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+  padding-right: 2rem;
+  cursor: pointer;
+}
+.cid-sqm6wxotXx .link:before {
+  content: '\e966';
+  font-family: MobiriseIcons !important;
+  position: absolute;
+  right: 0rem;
+  transition: all 0.3s;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: currentColor;
+}
+.cid-sqm6wxotXx .link:hover:before {
+  margin-right: -0.4rem;
+}
+.cid-sqm6wxotXx .box {
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.cid-sqm6wxotXx .box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  opacity: 0.1;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.cid-sqm6wxotXx .bg1 {
+  background-image: url("../../../assets/images/cat-kabira-badass-boundaries-2.jpg");
+}
+.cid-sqm6wxotXx .icon-wrap {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 2;
+}
+.cid-sqm6wxotXx .icon-wrap:hover {
+  transform: scale(1.1);
+}
+.cid-sqm6wxotXx .icon-wrap span {
+  padding-left: 8px;
+}
+.cid-sqm6wxotXx .mbr-media span {
+  font-size: 38px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  transition: all 0.25s;
+  color: #ffffff !important;
+}
+.cid-sqm6wxotXx .mbr-media span.mbri-play:before {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-35%);
+  -moz-transform: translateX(-35%);
+  -ms-transform: translateX(-35%);
+  -o-transform: translateX(-35%);
+  transform: translateX(-35%);
+}
+.cid-sqm6wxotXx .modalWindow {
+  position: fixed;
+  z-index: 5000;
+  left: 0;
+  top: 0;
+  background-color: rgba(61, 61, 61, 0.65);
+  width: 100%;
+  height: 100%;
+}
+.cid-sqm6wxotXx .modalWindow .modalWindow-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+.cid-sqm6wxotXx .modalWindow .modalWindow-video {
+  height: calc(44.9943757vw);
+  width: 80vw;
+  margin: 0 auto;
+}
+.cid-sqm6wxotXx a.close {
+  position: absolute;
+  right: 4vw;
+  top: 4vh;
+  color: #ffffff;
+  z-index: 5000000;
+  font-size: 37px;
+  background: #000;
+  padding: 20px;
+  border-radius: 50%;
+}
+.cid-sqm6wxotXx a.close:hover {
+  color: #ffffff;
+}
+@media (max-width: 576px) {
+  .cid-sqm6wxotXx {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  .cid-sqm6wxotXx .box {
+    height: 250px;
+  }
+}
+.cid-sqm6wxotXx H4 {
+  color: #b69b74;
+}
+.cid-sqm6wxotXx H3 {
+  color: #003f4e;
+}
 .cid-spuWehdCs9 {
   padding-top: 90px;
   padding-bottom: 0px;
