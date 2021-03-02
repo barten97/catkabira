@@ -4946,15 +4946,7 @@ section.lazy-placeholder:after {
   color: #232323;
 }
 .cid-spRIST4u4H {
-  padding-top: 105px;
-  padding-bottom: 75px;
   background-color: #ffffff;
-}
-@media (max-width: 992px) {
-  .cid-spRIST4u4H {
-    padding-top: 70px;
-    padding-bottom: 50px;
-  }
 }
 .cid-spRIST4u4H .text {
   padding: 0;
@@ -5053,10 +5045,6 @@ section.lazy-placeholder:after {
   color: #ffffff;
 }
 @media (max-width: 767px) {
-  .cid-spRIST4u4H {
-    padding-top: 49px;
-    padding-bottom: 35px;
-  }
   .cid-spRIST4u4H .box {
     height: 250px;
   }
