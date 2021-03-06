@@ -7554,58 +7554,6 @@ section.lazy-placeholder:after {
 .cid-sq2rdM2l7z .mbr-section-title {
   color: #498d8e;
 }
-.cid-sp7QhMua6m {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #f1eeea;
-}
-.cid-sp7QhMua6m img {
-  width: 90%;
-  object-fit: cover;
-  height: 100%;
-}
-@media (max-width: 992px) {
-  .cid-sp7QhMua6m img {
-    width: 100%;
-  }
-  .cid-sp7QhMua6m .pb-5 {
-    padding-bottom: 1rem!important;
-  }
-}
-.cid-sp7QhMua6m ol {
-  padding: 0;
-  margin: 0;
-}
-.cid-sp7QhMua6m li {
-  padding-bottom: 1rem;
-  line-height: 1.4;
-}
-.cid-sp7QhMua6m .counter-container2 ol {
-  counter-reset: start 4;
-}
-.cid-sp7QhMua6m .counter-container2 li {
-  display: block;
-}
-.cid-sp7QhMua6m .counter-container2 li:before {
-  content: counter(start) ". ";
-  counter-increment: start;
-}
-.cid-sp7QhMua6m .counter-container1 ol {
-  counter-reset: start 0;
-}
-.cid-sp7QhMua6m .counter-container1 li {
-  display: block;
-}
-.cid-sp7QhMua6m .counter-container1 li:before {
-  content: counter(start) ". ";
-  counter-increment: start;
-}
-.cid-sp7QhMua6m li:before {
-  color: #003f4e;
-}
-.cid-sp7QhMua6m H3 {
-  color: #003f4e;
-}
 .cid-sp7QS0pgOL {
   padding-top: 45px;
   padding-bottom: 45px;
