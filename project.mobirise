@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "events.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "woodm4",
       "title": "WoodM4",
@@ -66,7 +66,7 @@
       }
     ],
     "imageResize": false,
-    "uniqCompNum": 177,
+    "uniqCompNum": 183,
     "versionPublish": "5.3.0",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/warm-mandala.png",
@@ -953,7 +953,7 @@
           },
           "_name": "features01",
           "_sourceTheme": "woodm4",
-          "_customHTML": "<section class=\"features1 woodm4_features1\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\t\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Images\" name=\"showImages\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Title\" name=\"showtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Links\" name=\"showlinks\" checked>\n\t\t<select title=\"Cards Count\" name=\"TestimonialsCount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\" selected>2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t</select>\n\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background2-1.jpg\">\n\t\t\t<input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"title col-12 pb-4 align-center\" mbr-if=\"showTitle || showSubtitle\">\n\t\t\t\t<h2 class=\"pb-3 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\">\n\t\t\t\t\tCAT KABIRA YOGA &amp; ENERGETIC ARTS</h2>\n\t\t\t\t<h3 class=\"mbr-section-subtitle pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Upcoming Events</h3>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"card align-center col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\">\n\t\t\t\t<div class=\"panel-item\">\n\t\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/cat-kabira-yoga-800x533.jpg\" alt=\"Healing Energy Workshop Bali\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t\t<h2 class=\"mbr-section-title pb-2 align-center mbr-bold mbr-black mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showtitle\"><span style=\"font-weight: 400;\">Illumination</span></h2>\n\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .link-wrap\"><b>April 23 - May 8, 2021</b><br>Self-Healing Retreat<br>(Understanding Your Energy Body)<br><i style>ONLINE IMMERSION</i><br></p>\n\t\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n                                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-warning-outline\" href=\"https://catkabiraenergeticarts.com/illumination\" data-app-placeholder=\"Type Text\" target=\"_blank\">LEARN MORE</a></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card align-center col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\" mbr-if=\"TestimonialsCount>1\">\n\t\t\t\t<div class=\"panel-item\">\n\t\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/power-of-pleasure-cat-kabira-666x876.jpeg\" alt=\"Cat Kabira Yoga & Energetic Arts\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t\t<h2 class=\"mbr-section-title pb-2 align-center mbr-bold mbr-black mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showtitle\"><span style=\"font-weight: normal;\">\n\t\t\t\t\t\t\t\tPower of Pleasure</span></h2>\n\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .link-wrap\"><b>July 3 - September 18, 2021</b><br>Eating Disorder <br>Breakthrough Support<br><i>ONLINE IMMERSION</i><br></p>\n\t\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n                                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-warning-outline\" href=\"https://catkabiraenergeticarts.com/powerofpleasure\" data-app-placeholder=\"Type Text\" target=\"_blank\">LEARN MORE</a></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card align-center col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\" mbr-if=\"TestimonialsCount>2\">\n\t\t\t\t<div class=\"panel-item\">\n\t\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/guidedmedvisionquests-suki-zoe-cat-kabira-182.jpg\" alt>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t\t<h2 class=\"mbr-section-title pb-2 align-center mbr-bold mbr-black mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showtitle\"><span style=\"font-weight: 400;\">Illumination</span></h2>\n\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .link-wrap\"><b>\n\t\t\t\t\t\t\t\tEnergy Training<br>April 25 - June 13, 2021</b><br>ONLINE TRAINING<br>Zoom Workshop</p>\n\t\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n                               <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-warning-outline\" href=\"https://catkabiraenergeticarts.com/illumination\" data-app-placeholder=\"Type Text\" target=\"_blank\">LEARN MORE</a></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_customHTML": "<section class=\"features1 woodm4_features1\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons\">\n\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\t\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Images\" name=\"showImages\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Title\" name=\"showtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Links\" name=\"showlinks\" checked>\n\t\t<select title=\"Cards Count\" name=\"TestimonialsCount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\" selected>2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t</select>\n\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background2-1.jpg\">\n\t\t\t<input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"title col-12 pb-4 align-center\" mbr-if=\"showTitle || showSubtitle\">\n\t\t\t\t<h2 class=\"pb-3 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showTitle\">\n\t\t\t\t\tCAT KABIRA YOGA &amp; ENERGETIC ARTS</h2>\n\t\t\t\t<h3 class=\"mbr-section-subtitle pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Upcoming Events</h3>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"card align-center col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\">\n\t\t\t\t<div class=\"panel-item\">\n\t\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/cat-kabira-yoga-800x533.jpg\" alt=\"Healing Energy Workshop Bali\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t\t<h2 class=\"mbr-section-title pb-2 align-center mbr-bold mbr-black mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showtitle\"><span style=\"font-weight: 400;\">Illumination</span></h2>\n\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .link-wrap\"><b>April 25 - May 16, 2021</b><br>Self-Healing Retreat<br>(Understanding Your Energy Body)<br><i style>ONLINE IMMERSION</i><br></p>\n\t\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n                                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-warning-outline\" href=\"https://catkabiraenergeticarts.com/illumination\" data-app-placeholder=\"Type Text\" target=\"_blank\">LEARN MORE</a></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card align-center col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\" mbr-if=\"TestimonialsCount>1\">\n\t\t\t\t<div class=\"panel-item\">\n\t\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/power-of-pleasure-cat-kabira-666x876.jpeg\" alt=\"Cat Kabira Yoga & Energetic Arts\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t\t<h2 class=\"mbr-section-title pb-2 align-center mbr-bold mbr-black mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showtitle\"><span style=\"font-weight: normal;\">\n\t\t\t\t\t\t\t\tPower of Pleasure</span></h2>\n\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .link-wrap\"><b>July 3 - September 18, 2021</b><br>Eating Disorder <br>Breakthrough Support<br><i>ONLINE IMMERSION</i><br></p>\n\t\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n                                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-warning-outline\" href=\"https://catkabiraenergeticarts.com/powerofpleasure\" data-app-placeholder=\"Type Text\" target=\"_blank\">LEARN MORE</a></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card align-center col-12 col-md-6 md-pb\" mbr-class=\"{'col-lg-4': TestimonialsCount > 2 }\" mbr-if=\"TestimonialsCount>2\">\n\t\t\t\t<div class=\"panel-item\">\n\t\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t\t<div class=\"photo\" mbr-if=\"showImages\">\n\t\t\t\t\t\t\t<img src=\"@PROJECT_PATH@/assets/images/guidedmedvisionquests-suki-zoe-cat-kabira-182.jpg\" alt>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"text-wrap\">\n\t\t\t\t\t\t\t<h2 class=\"mbr-section-title pb-2 align-center mbr-bold mbr-black mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showtitle\"><span style=\"font-weight: 400;\">Illumination</span></h2>\n\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .link-wrap\"><b>\n\t\t\t\t\t\t\t\tEnergy Training<br>April 25 - June 13, 2021</b><br>ONLINE TRAINING<br>Zoom Workshop</p>\n\t\t\t\t\t\t\t<div class=\"link-wrap pt-2\" mbr-if=\"showlinks\">\n                               <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn align-center\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-warning-outline\" href=\"https://catkabiraenergeticarts.com/illumination\" data-app-placeholder=\"Type Text\" target=\"_blank\">LEARN MORE</a></div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
           "_JSplaceholders": [],
           "_PHPplaceholders": [],
           "_anchor": "features01-18",
@@ -2521,6 +2521,260 @@
           "_global": true,
           "_once": "menu",
           "_params": {}
+        },
+        {
+          "alias": "mobirise4-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "type",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(@bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "position": "relative",
+            "overflow": "hidden",
+            "svg": {
+              "position": "absolute",
+              "bottom": "-9.5rem",
+              "left": "50%",
+              "transform": "translate(-50%) scaleX(-2) rotate(-12deg)",
+              "filter": "fliph",
+              "animation": "wave2 5s ease-in-out infinite"
+            },
+            "@keyframes wave2": {
+              "from": {
+                "transform": "translate(-50%) scaleX(-2) rotate(-10deg)"
+              },
+              "50%": {
+                "transform": "translate(-50%) scaleX(-2.2) scaleY(1.1) rotate(-13deg)"
+              },
+              "to": {
+                "transform": "translate(-50%) scaleX(-2) rotate(-10deg)"
+              }
+            },
+            "#e12_areaS3": {
+              "fill": "@svg1 !important"
+            },
+            "#e19_areaS3": {
+              "fill": "@svg2 !important"
+            },
+            ".carousel-control": {
+              "background": "#000",
+              "opacity": "0.2"
+            },
+            ".carousel": {
+              "width": "80%",
+              "margin": "auto"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#000000"
+            },
+            ".carousel-item": {
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              ".media-container-row": {
+                "-webkit-flex-grow": "1",
+                "flex-grow": "1"
+              },
+              ".wrap-img": {
+                "text-align": "center",
+                "img": {
+                  "transition": "all 0.3s",
+                  "max-height": "150px",
+                  "width": "auto",
+                  "max-width": "100%"
+                }
+              }
+            },
+            ".carousel-controls": {
+              "display": "flex",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              ".carousel-control": {
+                "background": "#000",
+                "border-radius": "50%",
+                "position": "static",
+                "width": "40px",
+                "height": "40px",
+                "margin-top": "2rem",
+                "border-width": "1px",
+                "&.carousel-control-prev": {
+                  "left": "auto",
+                  "margin-right": "20px",
+                  "margin-left": "0"
+                },
+                "&.carousel-control-next": {
+                  "right": "auto",
+                  "margin-right": "0"
+                },
+                ".mbr-iconfont": {
+                  "font-size": "1rem"
+                }
+              }
+            },
+            ".cloneditem-1, .cloneditem-2, .cloneditem-3, .cloneditem-4, .cloneditem-5": {
+              "display": "none"
+            },
+            ".col-lg-15": {
+              "-webkit-box-flex": "0",
+              "-ms-flex": "0 0 100%",
+              "-webkit-flex": "0 0 100%",
+              "flex": "0 0 100%",
+              "max-width": "100%",
+              "position": "relative",
+              "min-height": "1px",
+              "padding-right": "10px",
+              "padding-left": "10px",
+              "width": "100%"
+            },
+            "@media (min-width: 992px)": {
+              ".col-lg-15": {
+                "-ms-flex": "0 0 20%",
+                "-webkit-flex": "0 0 20%",
+                "flex": "0 0 20%",
+                "max-width": "20%",
+                "width": "20%"
+              },
+              ".carousel-inner": {
+                "opacity": "0.8",
+                "&.slides2": {
+                  "> .carousel-item.active.carousel-item-right, > .carousel-item.carousel-item-next": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(50%, 0, 0)",
+                    "transform": "translate3d(50%, 0, 0)"
+                  },
+                  "> .carousel-item.active.carousel-item-left, > .carousel-item.carousel-item-prev": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(-50%, 0, 0)",
+                    "transform": "translate3d(-50%, 0, 0)"
+                  },
+                  "> .carousel-item.carousel-item-left, > .carousel-item.carousel-item-prev.carousel-item-right, > .carousel-item.active": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(0, 0, 0)",
+                    "transform": "translate3d(0, 0, 0)"
+                  },
+                  ".cloneditem-1, .cloneditem-2, .cloneditem-3": {
+                    "display": "block"
+                  }
+                },
+                "&.slides3": {
+                  "> .carousel-item.active.carousel-item-right, > .carousel-item.carousel-item-next": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(33.333333%, 0, 0)",
+                    "transform": "translate3d(33.333333%, 0, 0)"
+                  },
+                  "> .carousel-item.active.carousel-item-left, > .carousel-item.carousel-item-prev": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(-33.333333%, 0, 0)",
+                    "transform": "translate3d(-33.333333%, 0, 0)"
+                  },
+                  "> .carousel-item.carousel-item-left, > .carousel-item.carousel-item-prev.carousel-item-right, > .carousel-item.active": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(0, 0, 0)",
+                    "transform": "translate3d(0, 0, 0)"
+                  },
+                  ".cloneditem-1, .cloneditem-2, .cloneditem-3": {
+                    "display": "block"
+                  }
+                },
+                "&.slides4": {
+                  "> .carousel-item.active.carousel-item-right, > .carousel-item.carousel-item-next": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(25%, 0, 0)",
+                    "transform": "translate3d(25%, 0, 0)"
+                  },
+                  "> .carousel-item.active.carousel-item-left, > .carousel-item.carousel-item-prev": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(-25%, 0, 0)",
+                    "transform": "translate3d(-25%, 0, 0)"
+                  },
+                  "> .carousel-item.carousel-item-left, > .carousel-item.carousel-item-prev.carousel-item-right, > .carousel-item.active": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(0, 0, 0)",
+                    "transform": "translate3d(0, 0, 0)"
+                  },
+                  ".cloneditem-1, .cloneditem-2, .cloneditem-3": {
+                    "display": "block"
+                  }
+                },
+                "&.slides5": {
+                  "> .carousel-item.active.carousel-item-right, > .carousel-item.carousel-item-next": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(20%, 0, 0)",
+                    "transform": "translate3d(20%, 0, 0)"
+                  },
+                  "> .carousel-item.active.carousel-item-left, > .carousel-item.carousel-item-prev": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(-20%, 0, 0)",
+                    "transform": "translate3d(-20%, 0, 0)"
+                  },
+                  "> .carousel-item.carousel-item-left, > .carousel-item.carousel-item-prev.carousel-item-right, > .carousel-item.active": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(0, 0, 0)",
+                    "transform": "translate3d(0, 0, 0)"
+                  },
+                  ".cloneditem-1, .cloneditem-2, .cloneditem-3, .cloneditem-4": {
+                    "display": "block"
+                  }
+                },
+                "&.slides6": {
+                  "> .carousel-item.active.carousel-item-right, > .carousel-item.carousel-item-next": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(16.666667%, 0, 0)",
+                    "transform": "translate3d(16.666667%, 0, 0)"
+                  },
+                  "> .carousel-item.active.carousel-item-left, > .carousel-item.carousel-item-prev": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(-16.666667%, 0, 0)",
+                    "transform": "translate3d(-16.666667%, 0, 0)"
+                  },
+                  "> .carousel-item.carousel-item-left, > .carousel-item.carousel-item-prev.carousel-item-right, > .carousel-item.active": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(0, 0, 0)",
+                    "transform": "translate3d(0, 0, 0)"
+                  },
+                  ".cloneditem-1, .cloneditem-2, .cloneditem-3, .cloneditem-4, .cloneditem-5": {
+                    "display": "block"
+                  }
+                }
+              }
+            },
+            "H2": {
+              "color": "#003f4e"
+            },
+            ".carousel-control-prev": {
+              "position": "absolute!important",
+              "left": "-50px !important"
+            },
+            ".carousel-control-next": {
+              "position": "absolute!important",
+              "right": "-50px !important"
+            },
+            "@media (max-width: 576px)": {
+              ".carousel-control-prev": {
+                "left": "-10px !important"
+              },
+              ".carousel-control-next": {
+                "right": "-10px !important"
+              }
+            }
+          },
+          "_name": "extClients4",
+          "_sourceTheme": "woodm4",
+          "_customHTML": "<section class=\"extClients clients\" group=\"Additional Blocks\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"BootstrapCarouselSwipe,mbr-clients-slider\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"30\" step=\"1\" value=\"18\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"color\" title=\"Figure Color 1\" name=\"svg1\" value=\"#498d8e\" selected>\n        <input type=\"color\" title=\"Figure Color 2\" name=\"svg2\" value=\"#003f4e\" selected>\n        <input type=\"range\" inline title=\"Items\" name=\"slidesCount\" min=\"1\" max=\"20\" step=\"1\" value=\"3\">\n        <select title=\"Visible Slides\" name=\"visibleSlides\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n        </select>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Gradient Background\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#ffffff\" condition=\"gradientBg &&bg.type=='color'\">\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay&&bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"1380px\" height=\"810px\" viewBox=\"0 -8.992806499463768e-14 1380 810\" preserveAspectRatio=\"xMidYMid meet\">\n        <rect id=\"svgEditorBackground\" x=\"0\" y=\"0\" width=\"1380\" height=\"810\" style=\"fill: none; stroke: none;\"></rect>\n        <defs id=\"svgEditorDefs\">\n            <polygon id=\"svgEditorShapeDefs\" style=\"fill:khaki;stroke:black;vector-effect:non-scaling-stroke;stroke-width:1px;\"></polygon>\n            <path id=\"svgEditorClosePathDefs\" style=\"stroke:black;stroke-width:1px;fill:khaki;\"></path>\n        </defs>\n        <path d=\"M15083.791600683318,645.6720847341486c496.6000000000058,747.7999999999951,1953.3704016668416,1862.6734725832403,2751.999999999978,1967.9999999999955s1884.300000000003,-198.89999999999964,2718.7056474818382,-552.6365690040448s1746.4898225846773,-519.9524548776521,2593.2943525181545,-567.3634309959566s2251,-23.399999999999636,4384,1520.0000000000032s3205.199999999997,1437.2000000000025,4047.9999999999854,1520.0000000000018s3305.000000000029,-270.2999999999993,4640.000000000029,-1152s74.60000000000582,3328.3000000000065,32,3792.0000000000073s-19509.4,4591.000000000004,-21087.999999999993,-128.00000000000182s-1679.5999999999913,-6358.300000000001,-80,-6400Z\" style=\"stroke:black;fill:khaki;stroke-width:0px;\" id=\"e12_areaS3\" transform=\"matrix(0.0650006 -0.00123765 0.00123765 0.0650006 -995.543 317.589)\"></path>\n        <path d=\"M12434.469938292996,-979.2324603008726c496.600000000004,747.8000000000001,1953.3704016668398,1862.673472583247,2752.000000000018,1967.9999999999995s1884.2999999999865,-198.90000000000055,2718.7056474818364,-552.6365690040473s1746.4898225846846,-519.9524548776479,2593.2943525181618,-567.3634309959524s2251,-23.400000000001455,4384,1520s3205.199999999997,1437.1999999999962,4048,1519.9999999999955s3304.9999999999927,-270.3000000000011,4640,-1151.9999999999955s74.60000000000582,3328.3,32,3791.9999999999955s-19509.400000000023,4590.999999999997,-21088.000000000015,-127.99999999999818s-1679.5999999999985,-6358.300000000008,-80,-6400.0000000000055Z\" style=\"stroke:black;fill:aqua;stroke-width:0px;\" id=\"e19_areaS3\" transform=\"matrix(0.0647268 0.00608646 -0.00608646 0.0647268 -823.261 331.266)\"></path><text dy=\"-0.5em\" style=\"fill:black;font-family:Arial;font-size:20px;\" id=\"e14_texte\" transform=\"matrix(0.0640454 0 0 0.0640454 -832.187 329.878)\">\n            <textPath id=\"e13_textPath\" xlink:href=\"#e12_areaS3\">T</textPath>\n        </text>\n    </svg>\n\n\n    <div class=\"container mb-5\" mbr-if=\"showTitle||showSubtitle\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 align-center\">\n                <h2 class=\"mbr-section-title pb-3 mbr-semibold mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                    Our Clients\n                </h2>\n                <h3 class=\"mbr-section-subtitle mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showSubtitle\">Lorem ipsum dolor sit amet,\n                    consectetur adipiscing elit. Donec dui enim, pharetra at auctor vitae, mollis nec risus. Phasellus\n                    sagittis lectus at suscipit pulvinar.</h3>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"container\">\n        <div class=\"carousel slide\" data-ride=\"carousel\" role=\"listbox\">\n            <div class=\"carousel-inner\" mbr-list mbr-list-grow=\"slidesCount\" data-visible=\"{{visibleSlides}}\">\n                <div class=\"carousel-item \">\n                    <div class=\"media-container-row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"wrap-img \">\n                                <img src=\"@PROJECT_PATH@/assets/images/ieha-1.png\" class=\"img-responsive clients-img\" alt>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"carousel-item \">\n                    <div class=\"media-container-row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"wrap-img \">\n                                <img src=\"@PROJECT_PATH@/assets/images/acfed-practitioner-logo.jpg\" class=\"img-responsive clients-img\" alt>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                \n                \n                \n            <div class=\"carousel-item \">\n                    <div class=\"media-container-row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"wrap-img \">\n                                <img src=\"@PROJECT_PATH@/assets/images/500hryogaallianceryt.png\" class=\"img-responsive clients-img\" alt>\n                            </div>\n                        </div>\n                    </div>\n                </div></div>\n            <div class=\"carousel-controls\">\n                <a data-app-prevent-settings class=\"carousel-control carousel-control-prev\" role=\"button\" data-slide=\"prev\">\n                    <span aria-hidden=\"true\" class=\"mbri-left mbr-iconfont\"></span>\n                    <span class=\"sr-only\">Previous</span>\n                </a>\n                <a data-app-prevent-settings class=\"carousel-control carousel-control-next\" role=\"button\" data-slide=\"next\">\n                    <span aria-hidden=\"true\" class=\"mbri-right mbr-iconfont\"></span>\n                    <span class=\"sr-only\">Next</span>\n                </a>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sqZICI4s80",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "extClients4-52"
         },
         {
           "alias": "mobirise4-blocks/components",
@@ -8397,7 +8651,7 @@
             }
           },
           "_name": "header01",
-          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"9\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"9\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/cat-adjustment-2000x1333.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-end\">\n            <div class=\"mbr-white col-lg-6 col-md-12\">\n                <h1 class=\"mbr-section-title align-left mbr-bold pb-4 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n\n                    <div>\n                    </div>\n                    <div><span style=\"font-weight: normal;\">Cat Kabira</span></div>\n                </h1>\n                <h3 class=\"mbr-section-subtitle align-left mbr-light pb-4 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\"><b><i>\n                    Yoga &amp; Energetic Arts</i></b></h3>\n                <p class=\"mbr-text pb-4 align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                     I created \"The Kabira School of Energy\" where you can train in how to work with energy both in-person and remotely.</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">LEARN MORE</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">LIVE DEMO</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"9\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"9\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/cat-adjustment-2000x1333.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-end\">\n            <div class=\"mbr-white col-lg-6 col-md-12\">\n                <h1 class=\"mbr-section-title align-left mbr-bold pb-4 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n\n                    <div>\n                    </div>\n                    <div><span style=\"font-weight: normal;\">Cat Kabira</span></div>\n                </h1>\n                <h3 class=\"mbr-section-subtitle align-left mbr-light pb-4 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\"><b><i>\n                    Yoga &amp; Energetic Arts</i></b></h3>\n                <p class=\"mbr-text pb-4 align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                     I created \"The Kabira School of Energy\" where you can train in how to work with energy both in-person and remotely,&nbsp;as well as how to understand and support your own energetic field.</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">LEARN MORE</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">LIVE DEMO</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
           "_anchor": "header01-1",
           "_isUserblock": true,
           "_sourceTheme": "woodm4",
