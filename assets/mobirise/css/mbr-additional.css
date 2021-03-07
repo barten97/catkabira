@@ -1442,6 +1442,10 @@ section.lazy-placeholder:after {
     width: 100% !important;
   }
 }
+.cid-spPSQrTsn5 .mbr-section-subtitle,
+.cid-spPSQrTsn5 .underline {
+  color: #498d8e;
+}
 .cid-sp7JdjVpXj .navbar {
   padding: 0.5rem 0;
   background: #ffffff;
