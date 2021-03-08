@@ -443,7 +443,7 @@
           "_isSecondary": true,
           "typeCompatible": "type",
           "_styles": {
-            "& when not (@fullScreen)": {
+            "& when not (fullScreen)": {
               "padding-top": "(@paddingTop * 15px)",
               "padding-bottom": "(@paddingBottom * 15px)"
             },
