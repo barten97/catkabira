@@ -987,7 +987,15 @@ section.lazy-placeholder:after {
   color: #b1426e;
 }
 .cid-sqqg66sgH1 {
+  padding-top: 45px;
+  padding-bottom: 0px;
   background-color: #ffffff;
+}
+@media (max-width: 992px) {
+  .cid-sqqg66sgH1 {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
 }
 .cid-sqqg66sgH1 .text {
   padding: 0;
@@ -1086,6 +1094,10 @@ section.lazy-placeholder:after {
   color: #ffffff;
 }
 @media (max-width: 767px) {
+  .cid-sqqg66sgH1 {
+    padding-top: 21px;
+    padding-bottom: 0px;
+  }
   .cid-sqqg66sgH1 .box {
     height: 250px;
   }
