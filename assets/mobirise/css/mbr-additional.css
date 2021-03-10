@@ -8839,7 +8839,7 @@ section.lazy-placeholder:after {
   background-color: #003f4e;
 }
 .cid-spScqW9Acb {
-  padding-top: 90px;
+  padding-top: 135px;
   padding-bottom: 90px;
   background-color: #ffffff;
 }
@@ -8859,6 +8859,10 @@ section.lazy-placeholder:after {
 }
 .cid-spScqW9Acb .mbr-section-btn {
   margin-top: 2rem;
+}
+.cid-spScqW9Acb .mbr-section-title,
+.cid-spScqW9Acb .mbr-section-btn {
+  color: #003f4e;
 }
 .cid-spSca3gDzM .navbar {
   padding: 0.5rem 0;
